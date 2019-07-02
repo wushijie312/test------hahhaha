@@ -1,0 +1,15 @@
+.sub{width: 220px;position: relative;left:-240px; -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;box-sizing: border-box;padding: 10px;background: #fff;}
+.menuList{padding: 0;margin: 0;}
+.menuList li{padding-bottom: 10px;border-bottom: 1px solid #f2f2f2;width: 100%;margin-bottom: 10px;}
+.menuList li:nth-last-of-type(1){border-bottom: none;}
+.menuList li h3{margin-left: 40px;padding-left: 22px;height: 22px;line-height: 22px;color: #333;font-size: 16px;margin-bottom: 6px;}
+.menuList li:nth-of-type(1) h3{background: url("https://static.98ep.com/Img/DiDiTaxi/icon1.png") no-repeat left center;}
+.menuList li:nth-of-type(2) h3{background: url("https://static.98ep.com/Img/DiDiTaxi/icon2.png") no-repeat left center;}
+.menuList li:nth-of-type(3) h3{background: url("https://static.98ep.com/Img/DiDiTaxi/icon3.png") no-repeat left center;}
+.menuList li:nth-of-type(4) h3{background: url("https://static.98ep.com/Img/DiDiTaxi/icon4.png") no-repeat left center;}
+.menuList li:nth-of-type(5) h3{background: url("https://static.98ep.com/Img/DiDiTaxi/icon5.png") no-repeat left center;}
+.menuList li a{position:relative; display: block;height: 24px;line-height: 24px;color: #666;margin-left: 62px;}
+/*.menuList li a:hover{color: #fc9153;}
+.bg_Pbg { padding: 0; margin-left: 240px; background: #fff;}
+.section { width: 958px; margin-left: -220px; border: 1px solid #cecece;}*/

@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<!-- saved from url=(0140)https://design.yangguangqicai.com/WxAppBadge?key=fdd6182edfbf40719dc060cf3e093e38&templateCategoryId=1&ccparaId=1&pcode=18953_544899_0_59022 -->
+<html><head lang="zh"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="./我的文件_files/reset.css">
+    <link rel="stylesheet" type="text/css" href="./我的文件_files/bindexcss.css">
+    <link rel="stylesheet" href="./我的文件_files/upData.css">
+    <link href="./我的文件_files/SNcart.css" rel="stylesheet" type="text/css">
+    <script src="./我的文件_files/jquery-1.7.2.min.js.下载" type="text/javascript"></script>
+    <!--layer弹框、加载-->
+    <link href="./我的文件_files/layer.css" rel="stylesheet" type="text/css">
+    <script src="./我的文件_files/layer.js.下载" type="text/javascript"></script><link rel="stylesheet" href="./我的文件_files/layer.css" id="layui_layer_skinlayercss" style="">
+    <!--购物车-->
+    <link href="./我的文件_files/rightCart.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="./我的文件_files/bigcom.css">
+    <script type="text/javascript">
+        //路径前缀
+        var virPath = '/';
+        if (virPath == "/") {
+            virPath = '';
+        }
+        //全局异步操作弹出正在加载
+        $(document).ajaxStart(function () { layer.load(1, { shade: [0.3, '#000'] }); })
+               .ajaxComplete(function () { layer.closeAll('loading'); });
+
+ 
+    </script>
+    <title>我的文件</title>
+<link rel="stylesheet" type="text/css" href="./我的文件_files/yg_gai.css"><link rel="stylesheet" type="text/css" href="./我的文件_files/anli.css"><link type="text/css" rel="stylesheet" href="./我的文件_files/laydate.css"><link type="text/css" rel="stylesheet" href="./我的文件_files/laydate(1).css" id="LayDateSkin"><link href="./我的文件_files/WdatePicker.css" rel="stylesheet" type="text/css"></head>
+<!--头部信息-->
+
+
+
+<body><div id="divBrowersTest" style="height: 30px;line-height: 30px;background: #e74c3c;position: relative;display:none;">
+    <p style="width: 1400px;margin: 0 auto;color: #fff;">您的IE浏览器版本过低，请使用 IE8 及以上版本的浏览器。</p>
+    <span style="width:23px;height:23px;position: absolute;background: url(https://static.98ep.com/Img/edm-img/kjlkj.png) no-repeat;top: 4px; right: 100px;cursor: pointer;"></span>
+</div>
+<div class="head_top"><div class="iWrap clearfix"><ul class="iHead_list Fright"><li><div class="iListBox"><a href="javascript:" class="iListBoxLink"><span>安利审批人</span></a>
+<ol class="oList" style="display: none;">
+<li><a href="https://my.yangguangqicai.com/UserCenter/UpdateBaseInfo" target="_blank">个人信息</a></li><li><a href="https://my.yangguangqicai.com/Order/Index" target="_blank">我的订单</a></li><li><a href="https://my.yangguangqicai.com/UserCenter/UpdatePassword" target="_blank">账户安全</a></li><li><a href="https://passport.yangguangqicai.com/home/LoginOut?bakurl=https://amway.yangguangqicai.com/">退出</a></li>
+</ol></div></li>
+<li>
+                <div class="iListBox bgNone">
+                    <a href="javascript:" class="iListBoxLink">
+                        <span>客户服务</span></a>
+                       <ol class="oList"><li><a href="http://b.qq.com/webc.htm?new=0&amp;sid=4006086011&amp;eid=218808P8z8p8P8y8q8x8P&amp;o=www.e-p.com.cn/&amp;q=7" target="_blank">企业QQ</a></li></ol>
+                    
+                </div>
+            </li>
+
+</ul></div></div>
+
+<div class="sc_header">
+	<div class="iWrap clearfix">
+		<a href="https://portal.yangguangqicai.com/" class="sc_logo ">
+			<img src="./我的文件_files/amway.png">
+		</a>
+		<ul class="sc_nav clearfix">
+<li id="al_li_xj"><a href="https://portal.yangguangqicai.com/">首页</a></li>
+			<li><i class="Portal_CustomArea"></i><a href="https://portal.yangguangqicai.com/CategorySpec/CustomAreaList">定制专区</a></li><li><i class="anLi_GoodsStock"></i><a href="https://portal.yangguangqicai.com/CategorySpec/GoodsStock">现货专区</a></li><li><i class="my_order_index"></i><a href="https://my.yangguangqicai.com/Order/Index">我的订单</a></li><li><i class="my_workflow_index"></i><a href="https://my.yangguangqicai.com/workflow/index">审批管理<span class="dot0 dot1"></span></a></li>
+			<!--<li id="al_li_xj"><a href="https://my.yangguangqicai.com/CustomMaterial/InquiryList" target="_blank">我要询价</a></li>-->
+		</ul>
+		<div class="sc_txt_cart SearchBox">
+			<span class="sc_text">
+				<input class="S_txt" type="text" value="">
+				<em class="S_btn sc_search"></em>
+			</span>
+<div id="CartDiv">
+        </div>
+		</div>
+	</div>
+	</div>
+<link rel="stylesheet" type="text/css" href="./我的文件_files/Header.css">
+<div class="J-global-toolbar" id="DivCartRight"><div class="jdm-toolbar-wrap" id="icons" style="width: 0px;"><div class="jdm-toolbar" style=""> <div class="jdm-toolbar-panels J-panel" style="background: rgb(255, 255, 255);"><div class="J-panel-poisiton" id="jisuan"><div id="div1" style="display:none;"><div id="div2"></div></div><div id="cartContent"><div class="LabClickCont LabBuyCar" id="appendCart" style="height: 783px; overflow-y: auto;"><p class="LabAllCheck">最新加入的商品</p><table class="LabBuyCont" cellspacing="0" cellpadding="0"><tbody><tr><td width="15%"><a href="javascript:void(0);" onclick="dianji(&quot;https://item.yangguangqicai.com/product_big/17679/17379?relId=8232&amp;spec=x&amp;extattrid=60383&quot;);"><img src="./我的文件_files/8232.jpg" alt="" width="50"></a></td> <td width="60%"><div style="padding: 5px;"><a href="javascript:void(0);" onclick="dianji(&quot;https://item.yangguangqicai.com/product_big/17679/17379?relId=8232&amp;spec=x&amp;extattrid=60383&quot;);" title="PU笔记本尺寸：210mm*144mm,96p内页，材质：变色PU+米黄道林纸，印刷：单色印刷，工艺：压印，包装：单个OPP袋包装">PU笔记本</a></div><p class="wusuowei"><span style="width:122.4px;color:#7f7f7f;float:left;overflow:hidden;display:inline-block;white-space:nowrap;text-overflow:ellipsis;">尺寸：210mm*144mm,96p内页，材质：变色PU+米黄道林纸，印刷：单色印刷，工艺：压印，包装：单个OPP袋包装</span><span style="color:#49a8c8;float:right;display:inline-block;"> <strong style="color:red">￥12</strong>x32000 </span><br> </p></td><td width="10%"><p class="LabProDelete"><a href="javascript:void(0);" price="12" onclick="deleteProduct(&#39;17379_581977_0_60383&#39;,&#39;32000&#39;,&#39;12&#39;,this,&#39;anlispr&#39;,&#39;https://cart.yangguangqicai.com&#39;)">删除</a></p></td></tr><tr><td width="15%"><a href="javascript:void(0);" onclick="dianji(&quot;https://item.yangguangqicai.com/product_big/17669/17241?relId=8163&amp;extattrid=57686&quot;);"><img src="./我的文件_files/8163.png" alt="" width="50"></a></td> <td width="60%"><div style="padding: 5px;"><a href="javascript:void(0);" onclick="dianji(&quot;https://item.yangguangqicai.com/product_big/17669/17241?relId=8163&amp;extattrid=57686&quot;);" title="易拉宝 塑钢款尺寸：80*200cm，材质：普通塑钢，印刷：单面喷绘，工艺：画面无背胶PP喷绘，包装：单个无纺布袋包装">易拉宝 塑钢款</a></div><p class="wusuowei"><span style="width:151.20000000000002px;color:#7f7f7f;float:left;overflow:hidden;display:inline-block;white-space:nowrap;text-overflow:ellipsis;">尺寸：80*200cm，材质：普通塑钢，印刷：单面喷绘，工艺：画面无背胶PP喷绘，包装：单个无纺布袋包装</span><span style="color:#49a8c8;float:right;display:inline-block;"> <strong style="color:red">￥65</strong>x3 </span><br> </p></td><td width="10%"><p class="LabProDelete"><a href="javascript:void(0);" price="65" onclick="deleteProduct(&#39;17241_581717_0_57686&#39;,&#39;3&#39;,&#39;65&#39;,this,&#39;anlispr&#39;,&#39;https://cart.yangguangqicai.com&#39;)">删除</a></p></td></tr><tr><td width="15%"><a href="javascript:void(0);" onclick="dianji(&quot;https://item.yangguangqicai.com/product_big/17729/18953?relId=8715&amp;extattrid=59882&quot;);"><img src="./我的文件_files/8715.jpg" alt="" width="50"></a></td> <td width="60%"><div style="padding: 5px;"><a href="javascript:void(0);" onclick="dianji(&quot;https://item.yangguangqicai.com/product_big/17729/18953?relId=8715&amp;extattrid=59882&quot;);" title="名片(小程序专用)成品尺寸：90*55mm，纸张品牌：鲸王，P面：2p/面，纸张：进口荷兰白卡，克数：315g，正背颜色：双面，规格：100张/盒">名片(小程序专用)</a></div><p class="wusuowei"><span style="width:151.20000000000002px;color:#7f7f7f;float:left;overflow:hidden;display:inline-block;white-space:nowrap;text-overflow:ellipsis;">成品尺寸：90*55mm，纸张品牌：鲸王，P面：2p/面，纸张：进口荷兰白卡，克数：315g，正背颜色：双面，规格：100张/盒</span><span style="color:#49a8c8;float:right;display:inline-block;"> <strong style="color:red">￥26</strong>x6 </span><br> </p></td><td width="10%"><p class="LabProDelete"><a href="javascript:void(0);" price="26" onclick="deleteProduct(&#39;18953_544899_0_59882&#39;,&#39;6&#39;,&#39;26&#39;,this,&#39;anlispr&#39;,&#39;https://cart.yangguangqicai.com&#39;)">删除</a></p></td></tr><tr><td width="15%"><a href="javascript:void(0);" onclick="dianji(&quot;https://item.yangguangqicai.com/product_big/17669/17407?relId=8246&amp;extattrid=55846&quot;);"><img src="./我的文件_files/8246.jpg" alt="" width="50"></a></td> <td width="60%"><div style="padding: 5px;"><a href="javascript:void(0);" onclick="dianji(&quot;https://item.yangguangqicai.com/product_big/17669/17407?relId=8246&amp;extattrid=55846&quot;);" title="X型展架尺寸：80*180cm，材质：铝合金，印刷：单面四色喷绘，工艺：画面无背胶PP喷绘，包装：单个无纺布袋包装">X型展架</a></div><p class="wusuowei"><span style="width:151.20000000000002px;color:#7f7f7f;float:left;overflow:hidden;display:inline-block;white-space:nowrap;text-overflow:ellipsis;">尺寸：80*180cm，材质：铝合金，印刷：单面四色喷绘，工艺：画面无背胶PP喷绘，包装：单个无纺布袋包装</span><span style="color:#49a8c8;float:right;display:inline-block;"> <strong style="color:red">￥48</strong>x1 </span><br> </p></td><td width="10%"><p class="LabProDelete"><a href="javascript:void(0);" price="48" onclick="deleteProduct(&#39;17407_582005_0_55846&#39;,&#39;1&#39;,&#39;48&#39;,this,&#39;anlispr&#39;,&#39;https://cart.yangguangqicai.com&#39;)">删除</a></p></td></tr><tr><td width="15%"><a href="javascript:void(0);" onclick="dianji(&quot;https://item.yangguangqicai.com/product_big/17672/17423?relId=8254&amp;extattrid=60527&quot;);"><img src="./我的文件_files/8254.jpg" alt="" width="50"></a></td> <td width="60%"><div style="padding: 5px;"><a href="javascript:void(0);" onclick="dianji(&quot;https://item.yangguangqicai.com/product_big/17672/17423?relId=8254&amp;extattrid=60527&quot;);" title="斜面海报展示架尺寸：50*70cm，材质：铁质，印刷：单面四色喷绘，工艺：KT板+写真喷绘，包装：单个瓦楞纸包装">斜面海报展示架</a></div><p class="wusuowei"><span style="width:151.20000000000002px;color:#7f7f7f;float:left;overflow:hidden;display:inline-block;white-space:nowrap;text-overflow:ellipsis;">尺寸：50*70cm，材质：铁质，印刷：单面四色喷绘，工艺：KT板+写真喷绘，包装：单个瓦楞纸包装</span><span style="color:#49a8c8;float:right;display:inline-block;"> <strong style="color:red">￥68</strong>x1 </span><br> </p></td><td width="10%"><p class="LabProDelete"><a href="javascript:void(0);" price="68" onclick="deleteProduct(&#39;17423_582037_0_60527&#39;,&#39;1&#39;,&#39;68&#39;,this,&#39;anlispr&#39;,&#39;https://cart.yangguangqicai.com&#39;)">删除</a></p></td></tr><tr><td width="15%"><a href="javascript:void(0);" onclick="dianji(&quot;https://item.yangguangqicai.com/product_big/17672/17421?relId=8253&amp;extattrid=60526&quot;);"><img src="./我的文件_files/8253.jpg" alt="" width="50"></a></td> <td width="60%"><div style="padding: 5px;"><a href="javascript:void(0);" onclick="dianji(&quot;https://item.yangguangqicai.com/product_big/17672/17421?relId=8253&amp;extattrid=60526&quot;);" title="A型铁质海报架尺寸：60*90cm，材质：铁质，印刷：单面四色喷绘，工艺：KT板+写真喷绘，包装：单个瓦楞纸包装">A型铁质海报架</a></div><p class="wusuowei"><span style="width:151.20000000000002px;color:#7f7f7f;float:left;overflow:hidden;display:inline-block;white-space:nowrap;text-overflow:ellipsis;">尺寸：60*90cm，材质：铁质，印刷：单面四色喷绘，工艺：KT板+写真喷绘，包装：单个瓦楞纸包装</span><span style="color:#49a8c8;float:right;display:inline-block;"> <strong style="color:red">￥98</strong>x1 </span><br> </p></td><td width="10%"><p class="LabProDelete"><a href="javascript:void(0);" price="98" onclick="deleteProduct(&#39;17421_582035_0_60526&#39;,&#39;1&#39;,&#39;98&#39;,this,&#39;anlispr&#39;,&#39;https://cart.yangguangqicai.com&#39;)">删除</a></p></td></tr><tr><td width="15%"><a href="javascript:void(0);" onclick="dianji(&quot;https://item.yangguangqicai.com/product_big/17679/17381?relId=8233&amp;spec=x&amp;extattrid=55486&amp;extattrid=55486&quot;);"><img src="./我的文件_files/8233.jpg" alt="" width="50"></a></td> <td width="60%"><div style="padding: 5px;"><a href="javascript:void(0);" onclick="dianji(&quot;https://item.yangguangqicai.com/product_big/17679/17381?relId=8233&amp;spec=x&amp;extattrid=55486&amp;extattrid=55486&quot;);" title="商务笔记本尺寸：208mm*140mm,96p内页，材质：变色PU+米黄道林纸，印刷：单色印刷，工艺：压印，包装：单个OPP袋包装">商务笔记本</a></div><p class="wusuowei"><span style="width:129.6px;color:#7f7f7f;float:left;overflow:hidden;display:inline-block;white-space:nowrap;text-overflow:ellipsis;">尺寸：208mm*140mm,96p内页，材质：变色PU+米黄道林纸，印刷：单色印刷，工艺：压印，包装：单个OPP袋包装</span><span style="color:#49a8c8;float:right;display:inline-block;"> <strong style="color:red">￥18</strong>x2000 </span><br> </p></td><td width="10%"><p class="LabProDelete"><a href="javascript:void(0);" price="18" onclick="deleteProduct(&#39;17381_581979_0_55486&#39;,&#39;2000&#39;,&#39;18&#39;,this,&#39;anlispr&#39;,&#39;https://cart.yangguangqicai.com&#39;)">删除</a></p></td></tr><tr><td width="15%"><a href="javascript:void(0);" onclick="dianji(&quot;https://item.yangguangqicai.com/product_big/17674/17255?relId=8170&amp;spec=x&amp;extattrid=55489&quot;);"><img src="./我的文件_files/8170.jpg" alt="" width="50"></a></td> <td width="60%"><div style="padding: 5px;"><a href="javascript:void(0);" onclick="dianji(&quot;https://item.yangguangqicai.com/product_big/17674/17255?relId=8170&amp;spec=x&amp;extattrid=55489&quot;);" title="珊瑚绒毛毯尺寸：1200*2000mm，材质：聚酯纤维，印刷：四色印刷，工艺：热升华印刷，包装：单个OPP袋包装">珊瑚绒毛毯</a></div><p class="wusuowei"><span style="width:129.6px;color:#7f7f7f;float:left;overflow:hidden;display:inline-block;white-space:nowrap;text-overflow:ellipsis;">尺寸：1200*2000mm，材质：聚酯纤维，印刷：四色印刷，工艺：热升华印刷，包装：单个OPP袋包装</span><span style="color:#49a8c8;float:right;display:inline-block;"> <strong style="color:red">￥30</strong>x1000 </span><br> </p></td><td width="10%"><p class="LabProDelete"><a href="javascript:void(0);" price="30" onclick="deleteProduct(&#39;17255_581791_0_55489&#39;,&#39;1000&#39;,&#39;30&#39;,this,&#39;anlispr&#39;,&#39;https://cart.yangguangqicai.com&#39;)">删除</a></p></td></tr><tr><td width="15%"><a href="javascript:void(0);" onclick="dianji(&quot;https://item.yangguangqicai.com/product_big/17679/18895?relId=8681&amp;extattrid=57638&quot;);"><img src="./我的文件_files/default.png" alt="" width="50"></a></td> <td width="60%"><div style="padding: 5px;"><a href="javascript:void(0);" onclick="dianji(&quot;https://item.yangguangqicai.com/product_big/17679/18895?relId=8681&amp;extattrid=57638&quot;);" title="内部名片成品尺寸：90*55mm，纸张品牌：鲸王，P面：2p/面，纸张：进口荷兰白卡，克数：315g，正背颜色：双面，规格：100张/盒">内部名片</a></div><p class="wusuowei"><span style="width:158.4px;color:#7f7f7f;float:left;overflow:hidden;display:inline-block;white-space:nowrap;text-overflow:ellipsis;">成品尺寸：90*55mm，纸张品牌：鲸王，P面：2p/面，纸张：进口荷兰白卡，克数：315g，正背颜色：双面，规格：100张/盒</span><span style="color:#49a8c8;float:right;display:inline-block;"> <strong style="color:red">￥1</strong>x1 </span><br> </p></td><td width="10%"><p class="LabProDelete"><a href="javascript:void(0);" price="1" onclick="deleteProduct(&#39;18895_544899_0_57638&#39;,&#39;1&#39;,&#39;1&#39;,this,&#39;anlispr&#39;,&#39;https://cart.yangguangqicai.com&#39;)">删除</a></p></td></tr><tr><td width="15%"><a href="javascript:void(0);" onclick="dianji(&quot;https://item.yangguangqicai.com/product_big/17669/17407?relId=8246&amp;extattrid=59061&quot;);"><img src="./我的文件_files/8246.jpg" alt="" width="50"></a></td> <td width="60%"><div style="padding: 5px;"><a href="javascript:void(0);" onclick="dianji(&quot;https://item.yangguangqicai.com/product_big/17669/17407?relId=8246&amp;extattrid=59061&quot;);" title="X型展架尺寸：60*160cm，材质：铝合金，印刷：单面四色喷绘，工艺：画面无背胶PP喷绘，包装：单个无纺布袋包装">X型展架</a></div><p class="wusuowei"><span style="width:144px;color:#7f7f7f;float:left;overflow:hidden;display:inline-block;white-space:nowrap;text-overflow:ellipsis;">尺寸：60*160cm，材质：铝合金，印刷：单面四色喷绘，工艺：画面无背胶PP喷绘，包装：单个无纺布袋包装</span><span style="color:#49a8c8;float:right;display:inline-block;"> <strong style="color:red">￥38</strong>x64 </span><br> </p></td><td width="10%"><p class="LabProDelete"><a href="javascript:void(0);" price="38" onclick="deleteProduct(&#39;17407_582007_0_59061&#39;,&#39;64&#39;,&#39;38&#39;,this,&#39;anlispr&#39;,&#39;https://cart.yangguangqicai.com&#39;)">删除</a></p></td></tr><tr><td width="15%"><a href="javascript:void(0);" onclick="dianji(&quot;https://item.yangguangqicai.com/product_big/17681/17441?relId=8263&amp;extattrid=57641&quot;);"><img src="./我的文件_files/8263.jpg" alt="" width="50"></a></td> <td width="60%"><div style="padding: 5px;"><a href="javascript:void(0);" onclick="dianji(&quot;https://item.yangguangqicai.com/product_big/17681/17441?relId=8263&amp;extattrid=57641&quot;);" title="亚克力证书框尺寸：100*200mm，材质：亚克力，印刷：数码四色打印，工艺：钻石抛光，包装：瓦楞纸盒包装">亚克力证书框</a></div><p class="wusuowei"><span style="width:151.20000000000002px;color:#7f7f7f;float:left;overflow:hidden;display:inline-block;white-space:nowrap;text-overflow:ellipsis;">尺寸：100*200mm，材质：亚克力，印刷：数码四色打印，工艺：钻石抛光，包装：瓦楞纸盒包装</span><span style="color:#49a8c8;float:right;display:inline-block;"> <strong style="color:red">￥46</strong>x1 </span><br> </p></td><td width="10%"><p class="LabProDelete"><a href="javascript:void(0);" price="46" onclick="deleteProduct(&#39;17441_582083_0_57641&#39;,&#39;1&#39;,&#39;46&#39;,this,&#39;anlispr&#39;,&#39;https://cart.yangguangqicai.com&#39;)">删除</a></p></td></tr><tr><td width="15%"><a href="javascript:void(0);" onclick="dianji(&quot;https://item.yangguangqicai.com/product_big/17673/17305?relId=8195&amp;extattrid=57649&quot;);"><img src="./我的文件_files/8195.jpg" alt="" width="50"></a></td> <td width="60%"><div style="padding: 5px;"><a href="javascript:void(0);" onclick="dianji(&quot;https://item.yangguangqicai.com/product_big/17673/17305?relId=8195&amp;extattrid=57649&quot;);" title="一次性纸杯尺寸：上口径5cm,下口径3.5cm,杯高4.8cm，材质：原木浆淋膜纸190g，印刷：单面四色印刷，工艺：上机印刷，包装：单个OPP袋包装">一次性纸杯</a></div><p class="wusuowei"><span style="width:122.39999999999999px;color:#7f7f7f;float:left;overflow:hidden;display:inline-block;white-space:nowrap;text-overflow:ellipsis;">尺寸：上口径5cm,下口径3.5cm,杯高4.8cm，材质：原木浆淋膜纸190g，印刷：单面四色印刷，工艺：上机印刷，包装：单个OPP袋包装</span><span style="color:#49a8c8;float:right;display:inline-block;"> <strong style="color:red">￥0.2</strong>x1000 </span><br> </p></td><td width="10%"><p class="LabProDelete"><a href="javascript:void(0);" price="0.2" onclick="deleteProduct(&#39;17305_581857_0_57649&#39;,&#39;1000&#39;,&#39;0.2&#39;,this,&#39;anlispr&#39;,&#39;https://cart.yangguangqicai.com&#39;)">删除</a></p></td></tr><tr><td width="15%"><a href="javascript:void(0);" onclick="dianji(&quot;https://item.yangguangqicai.com/product_big/17675/17267?relId=8176&amp;spec=x&amp;extattrid=57762&quot;);"><img src="./我的文件_files/8176.jpg" alt="" width="50"></a></td> <td width="60%"><div style="padding: 5px;"><a href="javascript:void(0);" onclick="dianji(&quot;https://item.yangguangqicai.com/product_big/17675/17267?relId=8176&amp;spec=x&amp;extattrid=57762&quot;);" title="记忆棉U型枕尺寸：320*280*125mm，材质：水晶超柔+记忆棉，印刷：单色印刷，工艺：刺绣，包装：单个OPP袋包装">记忆棉U型枕</a></div><p class="wusuowei"><span style="width:129.6px;color:#7f7f7f;float:left;overflow:hidden;display:inline-block;white-space:nowrap;text-overflow:ellipsis;">尺寸：320*280*125mm，材质：水晶超柔+记忆棉，印刷：单色印刷，工艺：刺绣，包装：单个OPP袋包装</span><span style="color:#49a8c8;float:right;display:inline-block;"> <strong style="color:red">￥38</strong>x1000 </span><br> </p></td><td width="10%"><p class="LabProDelete"><a href="javascript:void(0);" price="38" onclick="deleteProduct(&#39;17267_581807_0_57762&#39;,&#39;1000&#39;,&#39;38&#39;,this,&#39;anlispr&#39;,&#39;https://cart.yangguangqicai.com&#39;)">删除</a></p></td></tr></tbody></table></div></div><div class="LabBtnbox" id="priceTotal"><p class="clearfix"><span class="Fleft">共<span class="color29" id="span_count">13</span>种商品</span> <span class="Fright">共计:<span class="color29" id="span_totalprice">￥491244.00</span></span></p> <a class="LabBtn" onclick="jiesuan()" rehref="https://cart.yangguangqicai.com/BigCustomer/Cart"><span class="ii"></span>结算</a></div></div></div></div></div> <div class="jdm-toolbar-tabs J-tab" style="right: 6px;"><div class="ShoppingCart"><i class="tab_icon"></i> <span class="tab-sub J-count hide" style="display: inline;" id="cartProductCount">13</span><em class="tab-txt lin40">购物车</em></div><div class="WorkTime"><i class="tab_icon"></i><em class="tab-txt"><span style="display:block;margin-top:5px;">客服工作时间</span>09:00-18:00</em></div><div class="WorkPhone"><i class="tab_icon"></i><em class="tab-txt"><span style="display:block;margin-top:5px;">客服热线</span><a href="tel:4006-086-011">4006-086-011</a></em></div><div class="Progress" id="Progress" type="0" load="0"><i class="tab_icon"></i><em class="tab-txt lin40">我的足迹</em></div><div class="MyQuestion" id="MyQuestion"><i class="tab_icon"></i><em class="tab-txt lin40">常见问题</em></div><div class="Skype" id="skypeId"><i class="tab_icon"></i><em class="tab-txt"><span style="display:block;margin-top:10px;">在线物料咨询</span><a style="display: block;position: absolute;top: 0;left: 0;width: 100%;z-index: 1001;height: 100%;" href="skype:" live:2e13de7a81c9d986"?call"="" onclick="skypeCheck();"></a></em></div><div class="rightmobile"><i class="tab_icon"></i><em class="tab-txt"><span style="display:block;margin-top:5px;">专属客服(7*24)</span><a href="tel:18600770285">18600770285</a></em></div></div></div>
+
+    
+    <input id="hid_my_unlogin" name="hid_my_unlogin" type="hidden" value="False">
+    <!--头部信息开始-->
+    
+    <!--头部信息结束-->
+    <div class="iWrap">
+        <form action="https://design.yangguangqicai.com/" method="post">
+        <input name="__RequestVerificationToken" type="hidden" value="9f6_wSFDcCPaFfE5-eCvM5nAUjZRgeLxs--hOBVs2HukKaL9S3H9o45DL-tyr60zQ7VRKX-O5dPV1LedPD0tFka3RU28mClP0B0x1QkCtp-4EkfEkMR23qSqU3xxOGeMweAd-r1Hs-ODb1wIlJn55dSgT7N8xjBzen5UkMiG6_c1">
+        </form>
+        <script type="text/javascript">
+            $(function () {
+                $("body").ajaxSend(function (e, xhr, opt) {
+                    var antiForgery = $("input[name='__RequestVerificationToken']:first").val();
+                    if (antiForgery) {
+                        if (opt.url.indexOf('?') > 0) {
+                            opt.url = opt.url + "&RqToken=" + escape(antiForgery);
+
+                        } else {
+                            opt.url = opt.url + "?RqToken=" + escape(antiForgery);
+                        }
+                    }
+                });
+            })  
+        </script>
+        
+<div class="iWrap">
+    <div class="badge_head">
+        <h3>
+            名片 <span></span>
+        </h3>
+    </div>
+    <div class="badge_main">
+        <div class="clearfix meicai_liu_box">
+            <div class="clearfix meicai_liu1  ">
+                <h3 class="fl">
+                     <span class="meicai_liu1_c1">1</span><span class="meicai_liu1_c2">2</span><span class="meicai_liu1_c3">3</span></h3>
+                <button class="fl meicai_liu1_btn1" id="btnVCode">授权码：
+                025420</button>
+                <button class="fr meicai_liu1_btn2">
+                    展开</button>
+            </div>
+            
+<link rel="stylesheet" type="text/css" href="./我的文件_files/reset.css">
+<link rel="stylesheet" type="text/css" href="./我的文件_files/anli.css"> 
+<div style="background: #fff;">
+    <ul class="meicai_liu2 clearfix  hide">
+        <li>
+            <div class="meicai_liu2_a">
+                <span>1</span>
+                <p>
+                    在微信中搜索 行政帮手 或者<br>
+                    用微信扫描下面小程序码</p>
+            </div>
+            <img class="meicai_liu2_img" src="./我的文件_files/meicai_liu_a.png" alt="">
+        </li>
+        <li>
+            <div class="meicai_liu2_a">
+                <span>2</span>
+                <p>
+                    打开微信小程序进入首页<br>
+                    输入下方授权码登录
+                </p>
+            </div>
+            <img class="meicai_liu2_img" src="./我的文件_files/meicai_liu_b.png" alt="">
+            <p class="meicai_liu2_tit" id="pVCode">
+                025420</p>
+        </li>
+        <li>
+            <div class="meicai_liu2_a">
+                <span>3</span>
+                <p>
+                    登录后<br>
+                    进行申请名片</p>
+            </div>
+            <img class="meicai_liu2_img" src="./我的文件_files/meicai_liu_c.png" alt="">
+        </li>
+    </ul>
+</div>
+
+            <p class="meicai_liu3 hide">
+                注：<span>1-10</span>号，其他日期申请订单会排到下月</p>
+        </div>
+        <div class="badge_main_bottom">
+            <div class="clearfix">
+                <div class="main_top_r_date main_top_r_date1 clearfix fl">
+                    <span class="">申请日期</span>
+                    <input class="" type="text" id="startTime" onfocus="WdatePicker({maxDate:&#39;#F{$dp.$D(\&#39;endTime\&#39;)||\&#39;2020-10-01\&#39;}&#39;,alwaysUseStartDate:true});$(this).blur()" placeholder="开始时间">至
+                    <input class="" type="text" id="endTime" value="" onfocus="WdatePicker({minDate:&#39;#F{$dp.$D(\&#39;startTime\&#39;)||\&#39;2000-01-01\&#39;}&#39;,maxDate:&#39;#F{\&#39;2020-10-01\&#39;}&#39;,alwaysUseStartDate:true});$(this).blur()" placeholder="结束时间">
+                    <select class="main_select_type" id="selStatus">
+                        
+                        <option value="1" selected="selected">申请已确认</option>
+                        <option value="2">已提交订单</option>
+                        <option value="3">已驳回</option>
+                        
+                    </select>
+                </div>
+                <input class="fl main_search" type="button" name="" value="搜索" id="btnSearch">
+                <input class="fl main_search_gary main_search" type="button" name="" onclick="ProdEnable()" value="批量作废">
+                <input class="fl main_search_gary main_search" type="button" name="" id="btnExportExcel" value="批量导出">
+            </div>
+            <div class="DataList"> <ul class="badge_main_nav clearfix"> <ul class="badge_main_nav clearfix"><li data-status="1" data-templateid="21" data-applycount="2" data-templatecategoryid="1" class="highlight" applyrecordcode="Wx55381759115975" id="3462" murl="WxChatApp/User/Wx55381759115975/cmyk201906211134247386.tif" murlback="WxChatApp/User/Wx55381759115975/cmyk201906211134259418.tif"><a href="javascript:;"> <img class="main_card_img" src="./我的文件_files/water636967136645355643.jpg"><span class="main_card_applynumber">申请数量：2</span><img class="main_true_img" src="./我的文件_files/yx_date3.png"> </a><div class="icon_box clearfix"><a class="fl Magnifier" href="javascript:void(0)" onclick="ShowBigImage(this)"><img src="./我的文件_files/icon_search.png"><h3>放大镜</h3></a><a class="fl" href="javascript:void(0)" onclick="RejectOrEnable(0,3462,&#39;janice.sj.yang@amway.com&#39;,&#39;名片&#39;,&#39;025420&#39;,&#39;Wx55381759115975&#39;,&#39;2019-06-21&#39;)"><img src="./我的文件_files/icon_reject.png"><h3>驳回</h3></a><div class="imag" style="  display:none;">   <img width="500px" src="./我的文件_files/water636967136645355643.jpg">  <img width="500px" src="./我的文件_files/water636967136657543143.jpg"> </div> </div></li></ul> </ul></div>
+        </div>
+    </div>
+    <div id="markrespon" style="height: 120px; text-align: center; margin: 30px 30px 0;
+        border: solid 1px #bbb; display: none">
+        <textarea rows="3" name="remark" id="remark" placeholder="驳回原因：" style="width: 100%;
+            display: block; min-height: 80px; resize: none; padding: 10px;" maxlength="100"></textarea></div>
+    <div class="badge_footer clea rfix">
+        <div class="badge_celect_all fl">
+            <input type="checkbox" id="mCKAll">
+        </div>
+        <input type="hidden" id="chkArry" value="2#WxChatApp/User/Wx55381759115975/cmyk201906211134247386.tif,2#WxChatApp/User/Wx55381759115975/cmyk201906211134259418.tif">
+        <input type="hidden" id="chkids" value="3462">
+        <div class="badge_select_title fl">
+            全选<p>
+                （共有<span id="mTotal">1</span>个，可选择<span id="kxuanCount">1</span>个，已选择<span id="ckedCount">1</span>个）</p>
+        </div>
+        <input class="badge_submit fl" type="button" name="" value="提交">
+        <a href="https://cart.yangguangqicai.com/bigcustomer/cart" class="badge_submit_back input">返回</a>
+    </div>
+    <input type="hidden" id="hidHisidskey" value="DesignWxAppBadge_18953_544899_0_59022">
+    <input type="hidden" id="hidHisApplyIds" value="">
+</div>
+<script type="text/javascript" src="./我的文件_files/jquery-1.7.2.min.js(1).下载"></script>
+<script type="text/javascript" src="./我的文件_files/layer.js(1).下载"></script>
+<script type="text/javascript" src="./我的文件_files/laypage.js.下载"></script>
+<script type="text/javascript" src="./我的文件_files/laydate.js.下载"></script>
+<script type="text/javascript" src="./我的文件_files/WdatePicker.js.下载"></script>
+<script type="text/javascript">
+    //全局异步操作弹出正在加载
+    $(document).ajaxStart(function () {
+        layer.load(5, { shade: [0.4, '#393D49'] });
+    }).ajaxComplete(function () { layer.closeAll('loading'); });
+</script>
+<script type="text/javascript"> 
+    var hisApplyIds =$("#hidHisApplyIds").val();        //历史选中的申请
+    var PageIndex = 1; //默认当前页
+    var PageSize = 100000; //       l   
+
+    $(function () { 
+        //授权码复制到主页面 ---授权码相关
+        $(".meicai_liu2").addClass("hide");
+		$(".meicai_liu3").addClass("hide");
+        $("#btnVCode").html("授权码："+ $("#pVCode").html()); 
+        $(".meicai_liu1_btn2").click(function(){
+			if($(".meicai_liu2").hasClass("hide")){
+				$(".meicai_liu2").removeClass("hide"); 
+				$(".meicai_liu3").removeClass("hide"); 
+				$(this).text("收起");
+			}else{
+				$(".meicai_liu2").addClass("hide");
+				$(".meicai_liu3").addClass("hide");
+				$(this).text("展开");
+			}
+		});
+         
+        //加载数据
+        LoadList();
+
+        //提交
+        $(".badge_submit").click(function () {
+            var chkArry = $("#chkArry").val();
+            if (chkArry.length == 0) {
+                layer.alert("请选择要合并的文件");
+                return;
+            }
+            var chkids = $("#chkids").val();   
+//            if($(".DataList li[class='highlight'][data-status=1]").length<1) {
+//                layer.msg("提交的申请个数小于起订量1");
+//                return;
+//            } 
+
+             $(".badge_submit").attr("disabled","disabled");
+            layer.msg('正在合并文件，请稍候...', { icon: 16, shade: 0.2, time: 1000 * 60 * 60 * 12 }); 
+            $.ajax({
+                type: 'GET',
+                async: false,
+                dataType: "json",
+                url:virPath+ "/WxAppBadge/ZipWeChat",
+                data: { chkIds: chkids, chkImgUrls: chkArry,hisidskey:$("#hidHisidskey").val()},
+                success: function (result) {
+                    layer.closeAll('loading');
+                    if (result.Success) { 
+                        var backurl = 'https://cart.yangguangqicai.com/bigcustomer/savefiletoshoppingcart?pcode=18953_544899_0_59022';
+                        if (backurl.indexOf("?") > 0) { 
+                            window.location.href = backurl + "&path=" + result.ZipUrl+"&type=1&printCount="+result.printCount /parseInt('2') ; 
+                        } else {
+                            window.location.href = backurl + "?path=" + result.ZipUrl+"&type=1&printCount="+result.printCount /parseInt('2') ; 
+                        } 
+                    }
+                    else {
+                        layer.alert(result.Message)
+                    }
+
+                    $(".badge_submit").removeAttr("disabled");
+                }
+            });
+        });
+
+         //点击单个
+        $(".DataList").on("click","li[data-status=1]",function () {   
+            if ($(this).hasClass("highlight")) {
+                $(this).removeClass("highlight");
+            } else {
+                $(this).addClass("highlight");
+            } 
+            //点击选中之后 重新计算选中个数
+            SumTotal();
+        });
+  
+        //搜索
+        $("#btnSearch").click(function () { 
+            LoadList();
+        })
+
+        //下拉选择
+        $("#selStatus").change(function () { 
+            if ($("#selStatus").val() == 1) {
+                $(".badge_submit").show();
+                $(".badge_submit").prevAll().show();
+                $(".badge_submit").removeAttr("disabled", "");
+                $(".badge_submit").css("background", "#0abf39");
+            } 
+            else {
+                $(".badge_submit").hide();
+                $(".badge_submit").prevAll().hide();
+                $(".badge_submit").attr("disabled", "disabled");
+                $(".badge_submit").css("background", "#d9d9d9");
+            }
+            if ($("#selStatus").val() == 2 || $("#selStatus").val() == 3) {
+                $(".main_search_gary").hide();
+                $(".main_search_gary").attr("disabled", "disabled");
+                $(".main_search_gary").css("background", "#d9d9d9").css("border-color", "#d9d9d9");
+
+            } else { 
+                $(".main_search_gary").show();
+                $(".main_search_gary").removeAttr("disabled", "");
+                $(".main_search_gary").css("background", "#279dd8");
+            }
+        });
+
+       
+        $("#mCKAll").click(function () {
+            //全选
+            if ($(this).prop("checked")) {
+               $(".badge_main_nav li[data-status=1]").each(function () { 
+                    $(this).addClass("highlight"); 
+                });
+            } else {
+                 $(".badge_main_nav li[data-status=1]").each(function () { 
+                    $(this).removeClass("highlight"); 
+                });
+            }
+            //点击选中之后 重新计算选中个数
+            SumTotal( );
+        });
+
+        //导出
+        $("#btnExportExcel").click(function(){ 
+            var chkids = $("#chkids").val(); 
+            if (chkids.length == 0) {
+                layer.alert("请选择要导出的数据");
+                return;
+            } 
+            window.open(virPath+ "/WxAppBadge/ExportExcel?chkIds="+chkids+"&materialscode=1"); 
+        });
+        $(".icon_box").click(function(e){
+            e.stopPropagation();
+            // return false;
+        });
+    });
+
+    //放大图
+    function ShowBigImage(obj) { 
+        //页面层-自定义 
+        layer.open({
+            type: 1,
+            title: false,
+            area: ['500px', 'auto'],
+            closeBtn: 1,
+            shadeClose: true,
+            skin: '.layui-layer-title',
+            content: $(obj).parent().find(".imag").html()
+        });
+
+    }
+     
+    //驳回,作废 
+    function RejectOrEnable(type, chkids, email, materialsName, verifyCode, applyRecordCode, applyTime) {
+        var status = 3;
+        if (type == 0) {
+            status = 3; //驳回
+        } else if (type == 1) {
+            status = 4; //作废
+        }
+
+        //页面层-自定义
+        var index = layer.open({
+            type: 1,
+            title: false,
+            area: ['400px', '200px'],
+            closeBtn: 1,
+            shadeClose: false,
+            skin: '.layui-layer-title',
+            content: $('#markrespon'),
+            btn: ['提交', '取消'],
+            yes: function (index, layero) { 
+                var remark = $("#remark").val(); 
+                $.ajax({
+                    type: 'GET',
+                    //async: false,
+                    dataType: "json",
+                    url:virPath+ "/WxAppBadge/RejectOrEnable",
+                    data: { chkIds: chkids, status: status, remark: remark, email: email, materialsName: materialsName, verifyCode: verifyCode, applyRecordCode: applyRecordCode, applyTime: applyTime },
+                    success: function (result) {
+                        if (result.Success) {
+                            layer.close(index);
+                            layer.alert("已驳回！")
+
+                            //重新加载数据
+                            LoadList();
+                        }
+                        else {
+                            layer.alert(result.Message)
+                        }
+                    }
+                });
+            }
+        });
+
+        return false;
+    }
+    //批量作废
+    function ProdEnable() {
+ 
+        var chkids = $("#chkids").val();
+          if (chkids.length == 0) {
+            layer.alert("请选择要作废的数据");
+            return;
+        }
+        var index = layer.confirm("您确定要批量作废吗？", { btn: ['确定', '取消'] }, function () {
+            $.ajax({
+                type: 'POST',
+                //async: false,
+                dataType: "json",
+                url: virPath+ "/WxAppBadge/ProdEnable",
+                data: { chkIds: chkids, status: 4 },
+                success: function (result) {
+                    if (result.Success) {
+                        layer.close(index);
+                        layer.alert("已作废！")
+
+                        //重新加载数据
+                        LoadList();
+                    }
+                    else {
+                        layer.alert(result.Message)
+                    }
+                }
+            });
+        });
+    } 
+
+    ///默认加载数据列表
+    function LoadList() {
+        //默认加载数据列表
+        var param = { status: $("#selStatus").val(), materialscode: '1', startTime: $("#startTime").val(), endTime: $("#endTime").val(), PageSize: PageSize, PageIndex: PageIndex };
+ 
+        $.ajax({
+            type: 'GET',
+            async: false,
+            dataType: "json",
+            url: virPath+ "/WxAppBadge/GetWeChatList",
+            data: param,
+            success: function (result) {
+                if (result.Success) {
+
+                    PageIndex = result.PageIndex;
+
+                    ShowDataHtml(result);
+                    $("#mTotal").html(result.Total);
+
+                    //Page($("#page"), result.Pages);
+                }
+                else {
+                    var _table = $(".DataList");
+                    _table.html("");
+                    var strhtml = "";
+                    strhtml += "<div class=\"order_empty_box\">";
+                    strhtml += "<div class=\"order_empty_main\">";
+                    strhtml += "<img src=\"https://static.98ep.com/Img/mobiles/yiXinPCXT/yx_order_empty.png\" />";
+                    strhtml += " <p>暂无申请</p>";
+                    strhtml += " </div>";
+                    strhtml += " </div>";
+                    _table.html(strhtml);
+                }
+             
+                SunTotal(); 
+            }
+        });
+    }
+    /********请求数据展示列表结束***********/
+
+    /**************数据展示html开始***************/
+    function ShowDataHtml(result) {
+
+        var strhtml = "", nqrhtml = "", nonqrthml = "";
+        var nqrcount = 0;
+        var _table = $(".DataList").html("");
+        
+      
+        var contnode="";
+        var applyCount=0;
+        if (result.List != null && $.parseJSON(result.List).length > 0) {
+            var list = $.parseJSON(result.List); 
+            for (var i = 0; i < list.length; i++) {
+                var MaterielInfo = $.parseJSON(list[i].MaterielInfo);
+                var nodehtml = "";
+               
+                contnode="class=\"\"";
+                if( hisApplyIds.indexOf(","+list[i].Id+",")>-1)
+                    contnode="class=\"highlight\"";
+            
+               applyCount = MaterielInfo.Num;
+               if(applyCount==undefined&&MaterielInfo.TemplateCategoryName=="名片"){
+                    applyCount = 2;
+               }else if(applyCount==undefined&&MaterielInfo.TemplateCategoryName!="名片"){
+                    applyCount =1;
+               }
+                nodehtml += "<li  data-status=\"" + list[i].Status + "\"  data-templateid=\"" + MaterielInfo.TemplateId + "\" data-applyCount=\""+ applyCount+"\"   data-templateCategoryid=\"" + MaterielInfo.TemplateCategoryId + "\"  "+ contnode + "   ApplyRecordCode=\"" + list[i].ApplyRecordCode + "\"  ID=\"" + list[i].ID + "\" Murl=\"" + MaterielInfo.CmykPath + "\" MurlBack=\"" + MaterielInfo.CmykPathBack + "\">";
+                nodehtml += "<a href=\"javascript:;\"> ";
+                if (!(list[i].Status == 1)) {//已确认的才显示驳回按钮 
+                    nodehtml += "<p class=\"main_true_p\"></p>";
+                }
+
+                nodehtml += "<img class=\"main_card_img\" src=\"https://filed.98ep.com/" + MaterielInfo.PreviewPath + "\">";
+                
+                nodehtml += "<span class=\"main_card_applynumber\" >申请数量："+applyCount+ "</span>";
+
+
+                nodehtml += "<img class=\"main_true_img\" src=\"https://static.98ep.com/Img/mobiles/yiXinPCXT/yx_date3.png\"> ";
+                nodehtml += "</a>";
+
+                nodehtml += "<div class=\"icon_box clearfix\">";
+                nodehtml += "<a class=\"fl Magnifier\" href=\"javascript:void(0)\" onclick=\"ShowBigImage(this)\" ><img src=\"https://static.98ep.com/Img/mobiles/yiXinPCXT/icon_search.png\"><h3>放大镜</h3></a>";
+                if ( MaterielInfo.PatchApplyRecordCode==""&& list[i].Status == 1 ) {//已确认的并且不是补卡的申请才显示驳回按钮 
+                    nodehtml += "<a class=\"fl\" href=\"javascript:void(0)\" onclick=\"RejectOrEnable(0," + list[i].ID + ",'" + MaterielInfo.Email + "','" + MaterielInfo.MaterialsName + "','" + MaterielInfo.VerifyCode + "','" + list[i].ApplyRecordCode + "','" + list[i].ApplyTimeStr + "')\"><img src=\"https://static.98ep.com/Img/mobiles/yiXinPCXT/icon_reject.png\"><h3>驳回</h3></a>";
+                }
+                nodehtml += "<div class=\"imag\" style=\"  display:none;\" > ";
+                nodehtml += "  <img width=\"500px\"    src=\"https://filed.98ep.com/" + MaterielInfo.PreviewPath + "\" />";
+
+                if(MaterielInfo.TemplateCategoryId) {
+                    nodehtml += "  <img width=\"500px\"    src=\"https://filed.98ep.com/" + MaterielInfo.PreviewPathBack + "\" />"; 
+                }
+
+                nodehtml += " </div>";
+                nodehtml += " </div>";
+
+                if ( MaterielInfo.PatchApplyRecordCode!="" ) {
+                    nodehtml += "<div class=\"meicai_cont_again\">补卡</div>"; 
+                }
+                nodehtml += "</li>";
+
+                if (list[i].Status == 1  ) {         //确认状态的，sku绑定的模板id的胸卡放到前面//已确认的才显示驳回按钮
+                    nqrhtml += nodehtml;
+                    nqrcount += 1;
+                }
+                else {
+                    nonqrthml += nodehtml;
+                }   
+            } 
+      
+            $("#kxuanCount").html(nqrcount);
+            strhtml += " <ul class=\"badge_main_nav clearfix\">";
+//            if ($(".DataList li").length == 0) {
+//                nqrhtml += "<div class=\"order_empty_box\"><div class=\"order_empty_main\"><p>暂无胸卡申请</p></div></div>";
+//                strhtml += nqrhtml + " <ul class=\"badge_main_nav clearfix\">" + nonqrthml + "</ul> ";
+//            }
+//            else {
+         strhtml += " <ul class=\"badge_main_nav clearfix\">" + nqrhtml + nonqrthml + "</ul> ";
+            //}
+
+        } else {
+            //无数据
+            strhtml += "<div class=\"order_empty_box\">";
+            strhtml += "<div class=\"order_empty_main\">";
+            strhtml += "<img src=\"https://static.98ep.com/Img/mobiles/yiXinPCXT/yx_order_empty.png\" />";
+            strhtml += " <p>暂无申请</p>";
+            strhtml += " </div>";
+            strhtml += " </div>";
+        } 
+         $(".DataList").html(strhtml); 
+    }
+    /**************数据展示html结束***************/
+     
+    /************计算选中开始*******************/
+
+    function SunTotal() {
+        var strhtml = "";
+        var totalli = $(".DataList li").length;
+        $("#mTotal").html(totalli); 
+        if (totalli == 0) {
+            //无数据
+            strhtml += "<div class=\"order_empty_box\">";
+            strhtml += "<div class=\"order_empty_main\">";
+            strhtml += "<img src=\"https://static.98ep.com/Img/mobiles/yiXinPCXT/yx_order_empty.png\" />";
+            strhtml += " <p>暂无申请</p>";
+            strhtml += " </div>";
+            strhtml += " </div>";
+            $(".DataList").html(strhtml);
+
+            $("#kxuanCount").html("0");
+            $("#ckedCount").html("0");
+        }
+        else {
+//            var totalli = $(".DataList li").length;
+//            if (totalli == 0) {
+//               // if (!$(".DataList .order_empty_box").length) {
+
+//                    strhtml += "<div class=\"order_empty_box\"><div class=\"order_empty_main\"><p>暂无胸卡申请</p></div></div>";
+//                    $(".DataList").prepend(strhtml);
+//                //}
+//            }
+//            $("#kxuanCount").html(totalli);
+        }
+    }
+
+    function SumTotal() {
+        var obj=$(".badge_main_nav li");
+        var totalMoney = 0; //选中的总金额
+        var chkCount = 0; //选中的个数
+        var chkArry = []; //选中的申请单图片url
+        var chkids = []; //选中的申请单ID 
+        $(obj).each(function () {
+            if ($(this).attr("data-status") == "1" ) {
+                if ($(this).hasClass("highlight")) {
+                    chkArry.push($(this).attr("data-applyCount")+"#"+$(this).attr("Murl"));
+                    if($(this).attr("data-templateCategoryid") == "1")  //
+                    {
+                        chkArry.push($(this).attr("data-applyCount")+"#"+$(this).attr("MurlBack"));
+                    }
+                    
+                    chkids.push($(this).attr("ID"));
+                    chkCount++;
+                }
+            }
+        })
+        $("#chkArry").val(chkArry);
+        $("#chkids").val(chkids);
+        $("#ckedCount").html(chkCount);
+        var mtotal = parseInt($("#kxuanCount").html());
+        
+        if (mtotal == chkCount) {
+            $("#mCKAll").prop("checked", true);
+        } else {
+            $("#mCKAll").prop("checked", false);
+        }
+    }
+    /************计算选中结束*******************/
+     
+</script>
+
+    </div>
+    <input id="hidd_deptId" type="hidden" value="1369">
+
+<script type="text/javascript" src="./我的文件_files/validate.js.下载"></script>
+<script type="text/javascript" src="./我的文件_files/menuhead.js.下载"></script>
+<script type="text/javascript">
+$(".NavList a:gt(0)").each(function() {
+	var msgHref = $(this).attr("href").toLowerCase();
+	var hrefArr = msgHref.split('?');
+	if (location.href.toLowerCase().indexOf(hrefArr[0])!=-1) {
+		$(this).parent().addClass("iSelect"); 
+		return false;
+	} 
+});
+//消息中心控制
+if($(".NavList i.my_messagecenter_index").length>0)
+{
+$(".iHead_list li.my_messagecenter_index").css("display","block");
+}
+
+
+$(function(){
+    EntityFun();
+
+//重新加载购物车
+//typeof getShoppingCar === "function" ? getShoppingCar('https://cart.yangguangqicai.com', _userid, _username, $("#CartDiv"), _imgurl, callBack, _productClick): false;//调用活动显示
+
+
+});
+
+var EntityFun = function () {
+
+    //FlexSlider  entry_item
+    var iEntryItem = $(".FlexSlider").find(".entry_item");
+    $(".FlexSlider").css("width", iEntryItem.outerWidth(true) * iEntryItem.length);
+    $(".FlexSliderBox").mouseover(function () {
+        $(".sk_control_item").css("display", "block");
+    }).mouseout(function () {
+        $(".sk_control_item").css("display", "none");
+    });
+    var iNew = 0;
+    var num = Math.ceil($(".FlexSlider").width() / $(".FlexSliderBox").outerWidth(true)) - 1;
+
+    $(".sk_control_prev").click(function (event) {
+        iNew--;
+        if (iNew < 0) {
+            iNew = num;
+        }
+        $(".FlexSlider").animate({ left: -$(".FlexSliderBox").outerWidth(true) * iNew }, 300);
+        return false;
+    });
+
+    $(".sk_control_next").click(function (event) {
+        iNew++;
+        if (iNew > num) {
+            iNew = 0;
+        }
+        $(".FlexSlider").animate({ left: "" + -$(".FlexSliderBox").outerWidth(true) * iNew + "" }, 300);
+        return false;
+    });
+}
+</script>
+<script>
+
+//重新加载购物车
+//typeof getShoppingCar === "function" ? getShoppingCar('https://cart.yangguangqicai.com', _userid, _username, $("#CartDiv"), _imgurl, callBack, _productClick): false;//调用活动显示
+
+var reloadCart = function() {
+    getShoppingCar('https://cart.yangguangqicai.com', _userid, _username, $("#CartDiv"), _imgurl, callBack, _productClick);
+}
+
+var callBack = function() {
+    $('.dropdown').mouseover(function () {
+        $(".cart").css("background", "#514f47");
+        $(".dropdown-layer").css({ "border": "solid 1px #ccc", "display": "block" }).addClass("cart-hover");
+    }).mouseout(function () {
+        $(".cart").css("background", "");
+        $(".dropdown-layer").css({ 'border': "", "display": "none" }).removeClass("cart-hover");
+    });
+
+    $(".smc li").mouseover(function () {
+        $(this).css("background", "#f5f5f5");
+    }).mouseout(function () {
+        $(this).css("background", "");
+    });
+}
+</script>
+<div class="footerBox"><p class="copyRight">Copyright2010-2019 EasyPNP, All Rights Reserved 阳光印网 版权所有 <span><a href="http://www.miitbeian.gov.cn/" target="_blank">京ICP备14011154号</a></span></p></div>
+<script>$(function(){if(myBrowser()=="NotSupport"){$("#divBrowersTest").css("display","block")}});$("#weixin").hover(function(){$("#wxcode").show()},function(){$("#wxcode").hide()});var iT=parseInt($(".toolTipBox").css("top"));$(document).scroll(function(){$(".toolTipBox").css("top",$(this).scrollTop()+iT)});$(window).scroll(function(){if($(window).scrollTop()>30){$(".BackTop").css("display","block")}else{$(".BackTop").css("display","none")}});$(".BackTop").click(function(){$(window).scrollTop(0)});</script>
+
+<script src="./我的文件_files/rightCart.js.下载" type="text/javascript"></script><script language="Javascript" src="./我的文件_files/wpa.php"></script>
+<script type="text/javascript">
+    var addproducttimes = 0;
+    rightCart("https://cart.yangguangqicai.com", "167295", "anlispr", $("#DivCartRight"), 1, "2,6,7,8,15,16#18600770285","https://portal.yangguangqicai.com","https://my.yangguangqicai.com","https://cart.yangguangqicai.com","https://item.yangguangqicai.com","https://static.98ep.com");
+     
+</script>
+</body></html>

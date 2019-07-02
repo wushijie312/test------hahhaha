@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://my.yangguangqicai.com/Order/Index -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+
+    <title>订单管理</title>
+    <link rel="stylesheet" type="text/css" href="./订单管理_files/picbox.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="./订单管理_files/PageDefault.css">
+    <link rel="stylesheet" href="./订单管理_files/bigcom.css">
+    <link rel="stylesheet" type="text/css" href="./订单管理_files/yourclass.css" id="yourclass">
+    <link href="./订单管理_files/rightCart.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./订单管理_files/bigcom(1).css">
+    <link rel="stylesheet" type="text/css" href="./订单管理_files/reset.css">
+    <link rel="stylesheet" href="./订单管理_files/NavList.css">
+    <link rel="stylesheet" href="./订单管理_files/bindexcss.css">
+    <script src="./订单管理_files/hm.js.下载"></script>
+    <script type="text/javascript" src="./订单管理_files/jquery-1.7.2.min.js.下载"></script>
+    <script type="text/javascript" src="./订单管理_files/layer.js.下载"></script>
+    <link rel="stylesheet" href="./订单管理_files/layer.css" id="layui_layer_skinlayercss" style="">
+    <script type="text/javascript" src="./订单管理_files/laypage.js.下载"></script>
+    <script type="text/javascript" src="./订单管理_files/validate.js.下载"></script>
+    <link href="./订单管理_files/cartmini.css" rel="stylesheet" type="text/css">
+    <script src="./订单管理_files/BigCusCartControl.js.下载" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="./订单管理_files/yg_gai.css">
+    <link rel="stylesheet" href="./订单管理_files/single.css">
+    <link rel="stylesheet" href="./订单管理_files/bMaterial.css">
+    <link rel="stylesheet" type="text/css" href="./订单管理_files/Header.css">
+    <script src="./订单管理_files/index.js.下载"></script>
+    <script src="./订单管理_files/laydate.js.下载"></script>
+    <link type="text/css" rel="stylesheet" href="./订单管理_files/laydate.css">
+    <link type="text/css" rel="stylesheet" href="./订单管理_files/laydate(1).css" id="LayDateSkin">
+    <link rel="stylesheet" type="text/css" href="./订单管理_files/yg_gai(1).css">
+    <link rel="stylesheet" type="text/css" href="./订单管理_files/58kuaigou.css">
+    <link type="text/css" rel="stylesheet" href="./订单管理_files/laypage.css" id="laypagecss">
+</head>
+
+
+
+
+<body>
+    <div id="divBrowersTest" style="height: 30px;line-height: 30px;background: #e74c3c;position: relative;display:none;">
+        <p style="width: 1400px;margin: 0 auto;color: #fff;">您的IE浏览器版本过低，请使用 IE8 及以上版本的浏览器。</p>
+        <span style="width:23px;height:23px;position: absolute;background: url(https://static.98ep.com/Img/edm-img/kjlkj.png) no-repeat;top: 4px; right: 100px;cursor: pointer;"></span>
+    </div>
+
+    <div class="head_top">
+        <div class="iWrap clearfix">
+            <ul class="iHead_list Fright">
+                <li>
+                    <div class="iListBox"><a href="javascript:" class="iListBoxLink"><span>58申请人</span></a>
+                        <ol class="oList" style="display: none;">
+                            <li><a href="https://my.yangguangqicai.com/UserCenter/UpdateBaseInfo" target="_blank">个人信息</a></li>
+                            <li><a href="https://my.yangguangqicai.com/Order/Index" target="_blank">我的订单</a></li>
+                            <li><a href="https://my.yangguangqicai.com/UserCenter/UpdatePassword" target="_blank">账户安全</a></li>
+                            <li><a href="https://passport.yangguangqicai.com/home/LoginOut">退出</a></li>
+                        </ol>
+                    </div>
+                </li>
+                <li><a href="https://my.yangguangqicai.com/MsgCenter/Index" target="_blank">公告中心</a></li>
+                <li>
+                    <div class="iListBox bgNone">
+                        <a href="javascript:" class="iListBoxLink">
+                            <span>客户服务</span></a>
+                        <ol class="oList">
+                            <li><a href="http://b.qq.com/webc.htm?new=0&amp;sid=4006086011&amp;eid=218808P8z8p8P8y8q8x8P&amp;o=www.e-p.com.cn/&amp;q=7"
+                                    target="_blank">企业QQ</a></li>
+                        </ol>
+
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="iWrap mar_top20">
+        <div class="box clearfix">
+            <div class="Fleft LogoBox mar_left20"><a href="https://portal.yangguangqicai.com/"><img src="./订单管理_files/suyunyanshi.png"
+                        alt=""></a></div>
+            <div class="Fleft SearchBox"><input type="text" class="S_txt Fleft" ondrop="return false;"><button class="Fleft S_btn btn_confirm">搜索</button>
+                <div id="CartDiv" style="width: 141px; position: absolute; top: -8px; right: -200px;z-index:99">
+                    <div class="WrapCart clearfix">
+                        <div class="dropdown Fright" style="">
+                            <div class="cart" style="background: rgb(249, 249, 249);"><i class="ca-left"></i><i class="ca-right">&gt;</i>
+                                <i class="ca-count">8</i> <a href="https://cart.yangguangqicai.com/BigCustomer/Cart">我的购物车</a></div>
+                            <div class="dropdown-layer" style="display: none;">
+                                <div class="spacer"></div>
+                                <div class="settleup-content">
+                                    <div class="smt">
+                                        <h4>最新加入的商品</h4>
+                                    </div>
+                                    <div class="smc">
+                                        <ul id="mcart-sigle">
+                                            <li class="clearfix">
+                                                <div class="p-img Fleft"> <a href="https://item.yangguangqicai.com/product_big/17626/19615?relId=9040&amp;extattrid=58992"
+                                                        class=""><img src="./订单管理_files/default.png"></a></div>
+                                                <div class="p-name Fleft"><a href="https://item.yangguangqicai.com/product_big/17626/19615?relId=9040&amp;extattrid=58992"
+                                                        class="" title="新品车贴 平板左边尺寸：175*25cm，右边尺寸：175*25cm，材质：黑胶车贴120g高密底纸12s厚，工艺：覆亮膜,异性雕刻，物料编码：客户自定义">新品车贴
+                                                        平板</a>
+                                                    <p class="p-infor">左边尺寸：175*25cm，右边尺寸：175*25cm，材质：黑胶车贴120g高密底纸12s厚，工艺：覆亮膜,异性雕刻，物料编码：客户自定义</p>
+                                                </div>
+                                                <div class="p-detail Fright"><span class="p-price "> <strong>￥20.59</strong>x1</span><br>
+                                                    <a class="delete" href="javascript:void(0);" price="20.59" onclick="dProduct(&#39;19615_585841_0_58992&#39;,this,&#39;58sqr1&#39;,&#39;https://cart.yangguangqicai.com&#39;)">删除</a></div>
+                                            </li>
+                                            <li class="clearfix">
+                                                <div class="p-img Fleft"> <a href="https://item.yangguangqicai.com/product_big/17626/19453?relId=8959&amp;coordinatesid=15&amp;extattrid=59092"
+                                                        class=""><img src="./订单管理_files/default.png"></a></div>
+                                                <div class="p-name Fleft"><a href="https://item.yangguangqicai.com/product_big/17626/19453?relId=8959&amp;coordinatesid=15&amp;extattrid=59092"
+                                                        class="" title="自定义车贴">自定义车贴</a>
+                                                    <p class="p-infor"></p>
+                                                </div>
+                                                <div class="p-detail Fright"><span class="p-price "> <strong>￥3098.08</strong>x1</span><br>
+                                                    <a class="delete" href="javascript:void(0);" price="3098.08"
+                                                        onclick="dProduct(&#39;19453_585723_0_59092&#39;,this,&#39;58sqr1&#39;,&#39;https://cart.yangguangqicai.com&#39;)">删除</a></div>
+                                            </li>
+                                            <li class="clearfix">
+                                                <div class="p-img Fleft"> <a href="https://item.yangguangqicai.com/product_big/17626/19453?relId=8959&amp;extattrid=59089"
+                                                        class=""><img src="./订单管理_files/default.png"></a></div>
+                                                <div class="p-name Fleft"><a href="https://item.yangguangqicai.com/product_big/17626/19453?relId=8959&amp;extattrid=59089"
+                                                        class="" title="自定义车贴">自定义车贴</a>
+                                                    <p class="p-infor"></p>
+                                                </div>
+                                                <div class="p-detail Fright"><span class="p-price "> <strong>￥294.36</strong>x1</span><br>
+                                                    <a class="delete" href="javascript:void(0);" price="294.36" onclick="dProduct(&#39;19453_585719_0_59089&#39;,this,&#39;58sqr1&#39;,&#39;https://cart.yangguangqicai.com&#39;)">删除</a></div>
+                                            </li>
+                                            <li class="clearfix">
+                                                <div class="p-img Fleft"> <a href="https://item.yangguangqicai.com/product_big/17626/19453?relId=8959&amp;extattrid=59086"
+                                                        class=""><img src="./订单管理_files/default.png"></a></div>
+                                                <div class="p-name Fleft"><a href="https://item.yangguangqicai.com/product_big/17626/19453?relId=8959&amp;extattrid=59086"
+                                                        class="" title="自定义车贴">自定义车贴</a>
+                                                    <p class="p-infor"></p>
+                                                </div>
+                                                <div class="p-detail Fright"><span class="p-price "> <strong>￥956.76</strong>x1</span><br>
+                                                    <a class="delete" href="javascript:void(0);" price="956.76" onclick="dProduct(&#39;19453_585723_0_59086&#39;,this,&#39;58sqr1&#39;,&#39;https://cart.yangguangqicai.com&#39;)">删除</a></div>
+                                            </li>
+                                            <li class="clearfix">
+                                                <div class="p-img Fleft"> <a href="https://item.yangguangqicai.com/product_big/17626/19453?relId=8959&amp;coordinatesid=15&amp;extattrid=59081"
+                                                        class=""><img src="./订单管理_files/default.png"></a></div>
+                                                <div class="p-name Fleft"><a href="https://item.yangguangqicai.com/product_big/17626/19453?relId=8959&amp;coordinatesid=15&amp;extattrid=59081"
+                                                        class="" title="自定义车贴">自定义车贴</a>
+                                                    <p class="p-infor"></p>
+                                                </div>
+                                                <div class="p-detail Fright"><span class="p-price "> <strong>￥196.821</strong>x1</span><br>
+                                                    <a class="delete" href="javascript:void(0);" price="196.821298038"
+                                                        onclick="dProduct(&#39;19453_585723_0_59081&#39;,this,&#39;58sqr1&#39;,&#39;https://cart.yangguangqicai.com&#39;)">删除</a></div>
+                                            </li>
+                                            <li class="clearfix">
+                                                <div class="p-img Fleft"> <a href="https://item.yangguangqicai.com/product_big/17626/19453?relId=8959&amp;extattrid=59078"
+                                                        class=""><img src="./订单管理_files/default.png"></a></div>
+                                                <div class="p-name Fleft"><a href="https://item.yangguangqicai.com/product_big/17626/19453?relId=8959&amp;extattrid=59078"
+                                                        class="" title="自定义车贴">自定义车贴</a>
+                                                    <p class="p-infor"></p>
+                                                </div>
+                                                <div class="p-detail Fright"><span class="p-price "> <strong>￥43.78</strong>x1</span><br>
+                                                    <a class="delete" href="javascript:void(0);" price="43.78" onclick="dProduct(&#39;19453_585719_0_59078&#39;,this,&#39;58sqr1&#39;,&#39;https://cart.yangguangqicai.com&#39;)">删除</a></div>
+                                            </li>
+                                            <li class="clearfix">
+                                                <div class="p-img Fleft"> <a href="https://item.yangguangqicai.com/product_big/17626/19453?relId=8959&amp;extattrid=59076"
+                                                        class=""><img src="./订单管理_files/default.png"></a></div>
+                                                <div class="p-name Fleft"><a href="https://item.yangguangqicai.com/product_big/17626/19453?relId=8959&amp;extattrid=59076"
+                                                        class="" title="自定义车贴">自定义车贴</a>
+                                                    <p class="p-infor"></p>
+                                                </div>
+                                                <div class="p-detail Fright"><span class="p-price "> <strong>￥43.78</strong>x1</span><br>
+                                                    <a class="delete" href="javascript:void(0);" price="43.78" onclick="dProduct(&#39;19453_585719_0_59076&#39;,this,&#39;58sqr1&#39;,&#39;https://cart.yangguangqicai.com&#39;)">删除</a></div>
+                                            </li>
+                                            <li class="clearfix">
+                                                <div class="p-img Fleft"> <a href="https://item.yangguangqicai.com/product_big/17626/19453?relId=8959&amp;extattrid=59074"
+                                                        class=""><img src="./订单管理_files/default.png"></a></div>
+                                                <div class="p-name Fleft"><a href="https://item.yangguangqicai.com/product_big/17626/19453?relId=8959&amp;extattrid=59074"
+                                                        class="" title="自定义车贴">自定义车贴</a>
+                                                    <p class="p-infor"></p>
+                                                </div>
+                                                <div class="p-detail Fright"><span class="p-price "> <strong>￥66.56</strong>x1</span><br>
+                                                    <a class="delete" href="javascript:void(0);" price="66.56" onclick="dProduct(&#39;19453_585719_0_59074&#39;,this,&#39;58sqr1&#39;,&#39;https://cart.yangguangqicai.com&#39;)">删除</a></div>
+                                            </li>
+                                        </ul>
+                                        <ul id="mcart-gift"></ul>
+                                        <ul id="mcart-mz"></ul>
+                                    </div>
+                                    <div class="smb clearfix">
+                                        <div class="p-total Fleft">共<strong>8</strong>种商品，共计<strong>￥<span id="span_totalprice">4720.73</span></strong></div><a
+                                            href="https://passport.yangguangqicai.com/Home/GotoUrl?bakurl=https%3A//cart.yangguangqicai.com/BigCustomer/Cart"
+                                            title="去购物车"><span>去购物车</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="NavBorder">
+        <div class="iWrap">
+            <ul class="NavList">
+                <li class="NavFirst"><a href="https://portal.yangguangqicai.com/">物料采购</a>
+                    <div class="LeftGoodsList HeadMenu Glist hide" style="display: none;">
+                        <ul class="materielList HeadMenu OtherList">
+                            <li isfilter="0" class=""><a href="https://portal.yangguangqicai.com/CategorySpec/Index?categoryId=17626"><img
+                                        class="MaterIcon" src="./订单管理_files/icons-menu10003.png" over="https://portal.yangguangqicai.com/Images/category/icons-hover10003.png?v=120907"
+                                        out="https://portal.yangguangqicai.com/Images/category/icons-menu10003.png?v=120907"
+                                        style="width:26px;height:26px;"><span>喷绘类</span></a>
+                                <div class="MaterBox " style="padding: 10px; top: 0px; height: 316px; display: none;">
+                                    <div class="overHidden CategoryList">
+                                        <h3 class="MaterTitle mar_bottom20">喷绘类</h3>
+                                        <div class="clearfix mar_bottom10"><a href="https://portal.yangguangqicai.com/CategorySpec/Index?categoryId=17626"
+                                                class="Fleft MaterName">喷绘类&gt;</a>
+                                            <div class="Fleft MaterNameList clearfix mar_left10">
+                                                <p><a href="https://item.yangguangqicai.com/product_big/17626/19453?isFilter=0&amp;relId=8959">自定义车贴
+                                                    </a> </p>
+                                                <p><a href="https://item.yangguangqicai.com/product_big/17626/19611?isFilter=0&amp;relId=9038">新品车贴
+                                                        厢货（大） </a> </p>
+                                                <p><a href="https://item.yangguangqicai.com/product_big/17626/19613?isFilter=0&amp;relId=9039">新品车贴
+                                                        厢货（小） </a> </p>
+                                                <p><a href="https://item.yangguangqicai.com/product_big/17626/19615?isFilter=0&amp;relId=9040">新品车贴
+                                                        平板 </a> </p><a class="P_more_s" href="https://portal.yangguangqicai.com/CategorySpec/Index?categoryId=17626">更多&gt;</a>
+                                            </div>
+                                        </div><a class="All_More_s" href="https://portal.yangguangqicai.com/CategorySpec/Index?categoryId=17626">更多商品展示&gt;</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <div style="height:80px;" isfilter="0"></div>
+                            <div style="height:80px;" isfilter="1"></div>
+                        </ul>
+                    </div>
+                </li>
+                <li class="iSelect"><i class="my_order_index"></i><a href="https://my.yangguangqicai.com/Order/Index">我的订单</a></li>
+                <li><i class="my_workflow_index"></i><a href="https://my.yangguangqicai.com/workflow/index">审批管理</a></li>
+                <li><i class="my_messagecenter_index"></i><a href="https://my.yangguangqicai.com/MsgCenter/Index">公告中心<span
+                            class="dot0 dot1"></span></a></li>
+                <li class="NavLast">客服热线：4006-086-011</li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript">
+        //是否需要加载提示层
+        var hasloading = true;
+    </script>
+
+    <form action="https://my.yangguangqicai.com/" method="post">
+        <input name="__RequestVerificationToken" type="hidden" value="Ug5woedVdu3y3HC6FXuk5NMCqRrIz5CwLymMwmgYd6HMXMnRDq8aMlqq4U0x_yFPSAK75rxasrbsGl8hDot7tEudMEWqQrwmAQQH3acIfA7WB03IoJFBTLaxwfS7J5ceZXDC_bxER7PyLZ4jcNg7MNXiKuFdNisVbnS5mpVL-tI1"
+            ondrop="return false;">
+    </form>
+
+    <div class="iWrap" id="iWarp">
+        <div class="content bg_Pbg clearfix">
+            <div class="Fleft sub">
+
+                <ul id="mi" class="menuList">
+                    <li id="_41e6badc-9ead-486f-a2ea-104c10a796fd" class="iTitle">
+                        <h3 name="商品管理" style="background:url(&#39;https://static.98ep.com/Img/DiDiTaxi/didi_tig_shangpin.png&#39;) no-repeat left center;">商品管理</h3><a
+                            href="https://my.yangguangqicai.com/Coordinates/List" id="433cf2ce-5bed-449f-8a1b-6bdeb402204f"
+                            title=""><span>套装列表</span></a>
+                    </li>
+                    <li id="_d80b521a-7d26-442a-b32b-d3b52a3583e2" class="iTitle">
+                        <h3 name="订单管理" style="background:url(&#39;https://static.98ep.com/Img/DiDiTaxi/didi_tig_dingdan.png&#39;) no-repeat left center;">订单管理</h3><a
+                            href="https://my.yangguangqicai.com/Order/Index" id="259760fb-5970-475d-9ff7-724ad11fb002"
+                            title="" class="iCur"><span>我的订单</span></a>
+                    </li>
+                    <li id="_1994c985-496f-4bf9-8197-2a295e40b271" class="iTitle">
+                        <h3 name="流程审批" style="background:url(&#39;https://static.98ep.com/Img/DiDiTaxi/didi_tig_liucheg.png&#39;) no-repeat left center;">流程审批</h3><a
+                            href="https://my.yangguangqicai.com/workflow/index" id="598a6e46-c445-4bae-9f30-59260a9633d7"
+                            title=""><span>审批管理</span></a>
+                    </li>
+                    <li id="_ac631b8d-7526-454e-a55a-f0976e7be700" class="iTitle">
+                        <h3 name="账户设置" style="background:url(&#39;https://static.98ep.com/Img/DiDiTaxi/didi_tig_zhanghu.png&#39;) no-repeat left center;">账户设置</h3><a
+                            href="https://my.yangguangqicai.com/UserCenter/UpdateBaseInfo" id="839337ec-01d8-4637-bad8-60a161c19fab"
+                            title=""><span>个人信息</span></a><a href="https://my.yangguangqicai.com/UserCenter/UpdatePassword"
+                            id="169f4ac6-aaec-4dab-9cde-8836c20dee9e" title=""><span>账户安全</span></a><a href="https://my.yangguangqicai.com/MsgCenter/Index"
+                            id="525a80f2-2551-415a-a5a2-b0e98cd6fd82" title=""><span>公告中心</span></a><a href="https://my.yangguangqicai.com/address/list"
+                            id="a8c8e3c8-ba23-44e6-84f7-ee2bdb5ccc31" title=""><span>地址管理</span></a>
+                    </li>
+                    <li id="_7a02cfa8-2374-4c4a-8bb9-0cb7aa5b8685" class="iTitle">
+                        <h3 name="系统管理" style="background:url(&#39;https://static.98ep.com/Img/DiDiTaxi/didi_tig_xitong.png&#39;) no-repeat left center;">系统管理</h3><a
+                            href="https://my.yangguangqicai.com/person/personalcenter" id="7551e666-fea1-4f47-bacc-c314a0ed634e"
+                            title=""><span>个人中心</span></a>
+                    </li>
+                </ul>
+                <script>$("#mi a").each(function () { if (location.href == $(this).attr("href")) { $(this).parent().addClass("iCur"); $(this).addClass("iCur"); } });</script>
+
+
+            </div>
+            <div class="section Fleft">
+
+
+
+                <!--Header开始-->
+                <div class="iCaption">
+                    <em class="orderIcons"></em>我的订单
+                    <div class="searchBox">
+                        <span class="zoom"></span>
+                        <input type="text" placeholder="商品名称/订单号/交易单号" id="txtSearchKeyWord" class="searchTxt" ondrop="return false;">
+                    </div>
+                </div>
+                <!--Header结束-->
+                <div class="creat-order mar_top20">
+                    <ul class="creatOrderUl  clearfix">
+                        <li style="display: none;" onclick="window.location.href=&#39;/Order/Index?isStock=-1&amp;state=-1&#39;;">
+                            全部订单</li>
+                        <li onclick="window.location.href=&#39;/Order/Index?isStock=0&amp;state=-1&#39;; " class="iCurSel">全部订单</li>
+                        <li style="display: none;" onclick="window.location.href=&#39;/Order/Index?isStock=2&amp;state=-1&#39;; ">
+                            出库单</li>
+                    </ul>
+                </div>
+                <div class="orderList">
+                    <ul class="order-nav-list clearfix">
+                        <li><a href="https://my.yangguangqicai.com/Order/Index?isStock=0&amp;state=-1" class="curr">全部订单</a>
+                            <a href="javascript:;"><em>19</em></a>
+                        </li>
+                        <li style="display: none;"><a href="https://my.yangguangqicai.com/Order/Index?isStock=0&amp;state=0">未支付</a>
+                            <a href="javascript:;">
+                                <em>0</em></a> </li>
+                        <li style="display: none;"><a href="https://my.yangguangqicai.com/Order/Index?isStock=0&amp;state=1">待客服审核</a>
+                            <a href="javascript:;"><em>0</em></a>
+                        </li>
+                        <li><a href="https://my.yangguangqicai.com/Order/Index?isStock=0&amp;state=2">已审核</a> <a href="javascript:;"><em>19</em></a></li>
+                        <li><a href="https://my.yangguangqicai.com/Order/Index?isStock=0&amp;state=4">待发货</a> <a href="javascript:;"><em>0</em></a>
+                        </li>
+                        <li><a href="https://my.yangguangqicai.com/Order/Index?isStock=0&amp;state=9">已发货</a> <a href="javascript:;"><em>0</em></a>
+                        </li>
+                        <li><a href="https://my.yangguangqicai.com/Order/Index?isStock=0&amp;state=10">配送完成</a> <a href="javascript:;"><em>0</em></a>
+                        </li>
+                        <li><a href="https://my.yangguangqicai.com/Order/Index?isStock=0&amp;state=3">已取消</a> <a href="javascript:;"><em>0</em></a>
+                        </li>
+                    </ul>
+                    <div class="order-nav-list clearfix">
+
+                    </div>
+                    <table class="orderTab">
+                        <thead>
+                            <tr>
+                                <th style="width: auto;">
+                                    订单详情
+                                </th>
+                                <th style="width: 12%;">
+                                    数量
+                                </th>
+                                <th style="width:12%;">
+                                    总价（元）
+                                </th>
+                                <th style="width: 12%;">
+                                    类型
+                                </th>
+                                <th style="width: 12%;">
+                                    状态
+                                </th>
+                                <th style="width: 12%;">
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                
+                    <table class="orderTab m_b15 odgTab">
+                        <tbody>
+                            <tr class="titColor">
+                                <td style="width:auto;"><span class="boldStyle detailType">交易单：Q190612111829521</span><span
+                                        class="detailType">商品总金额 ￥30885</span></td>
+                                <td style="width: 12%;"><span class="detailType">运费 ￥0</span></td>
+                                <td style="width: 12%;"></td>
+                                <td style="width: 12%;"></td>
+                                <td style="width: 12%;"></td>
+                                <td style="width: 12%;"></td>
+                            </tr>
+
+                            <tr class="hover" style="background-color: rgb(255, 255, 255); display: table-row;">
+                                <td>
+                                    <div class="odg_box clearfix">
+                                        <div class="odg_img fl">
+                                            <img src="./订单管理_files/default.png" onclick="javascript:window.open(&#39;https://item.yangguangqicai.com/product_big/17626/19615?relId=9040&amp;extattrid=58992&#39;)"></<img>
+                                            <p>1190612320164</p>
+                                        </div>
+                                        <div class="odg_msg fl">
+                                            <h3>新品车贴 平板</h3>
+                                            <div class="odg_btn">
+                                                <button class="odg_btn_detail">查看详情</button>
+                                                <button class="odg_btn_address">地址列表</button>
+                                                <div class="odg_list_box">
+                                                    <div class="odg_list odg_list_a ">
+                                                        <div class="odg_nowarp">
+                                                            <ul class="odg_ul clearfix">
+                                                                <li>
+                                                                    <h3>[套餐]自定义车贴3</h3>
+                                                                    <div class="odg_bold">左边尺寸：175*25cm ，右边尺寸：175*25cm
+                                                                        ，材质：黑胶车贴120g高密底纸12s厚，工艺：覆亮膜,异性雕刻，物料编码：客户自定义</div>
+                                                                    <p>平米单价（元）：<span>3948*324</span></p>
+                                                                    <p>原料单价：<span>123.43</span></p>
+                                                                    <p>小计（元）：<span>123.43</span></p>
+                                                                </li>
+                                                                <li>
+                                                                    <h3>[套餐]自定义车贴</h3>
+                                                                    <div class="odg_bold">左边尺寸：175*25cm ，右边尺寸：175*25cm
+                                                                        ，材质：黑胶车贴120g高密底纸12s厚，工艺：覆亮膜,异性雕刻，物料编码：客户自定义</div>
+                                                                    <p>平米单价（元）：<span>3948*324</span></p>
+                                                                    <p>原料单价：<span>123.43</span></p>
+                                                                    <p>小计（元）：<span>123.43</span></p>
+                                                                </li>
+                                                                <li>
+                                                                    <h3>[套餐]自定义车贴</h3>
+                                                                    <div class="odg_bold">左边尺寸：175*25cm ，右边尺寸：175*25cm
+                                                                        ，材质：黑胶车贴120g高密底纸12s厚，工艺：覆亮膜,异性雕刻，物料编码：客户自定义</div>
+                                                                    <p>平米单价（元）：<span>3948*324</span></p>
+                                                                    <p>原料单价：<span>123.43</span></p>
+                                                                    <p>小计（元）：<span>123.43</span></p>
+                                                                </li>
+                                                                <li>
+                                                                    <h3>[套餐]自定义车贴</h3>
+                                                                    <div class="odg_bold">左边尺寸：175*25cm ，右边尺寸：175*25cm
+                                                                        ，材质：黑胶车贴120g高密底纸12s厚，工艺：覆亮膜,异性雕刻，物料编码：客户自定义</div>
+                                                                    <p>平米单价（元）：<span>3948*324</span></p>
+                                                                    <p>原料单价：<span>123.43</span></p>
+                                                                    <p>小计（元）：<span>123.43</span></p>
+                                                                </li>
+                                                                <li>
+                                                                    <h3>[套餐]自定义车贴</h3>
+                                                                    <div class="odg_bold">左边尺寸：175*25cm ，右边尺寸：175*25cm
+                                                                        ，材质：黑胶车贴120g高密底纸12s厚，工艺：覆亮膜,异性雕刻，物料编码：客户自定义</div>
+                                                                    <p>平米单价（元）：<span>3948*324</span></p>
+                                                                    <p>原料单价：<span>123.43</span></p>
+                                                                    <p>小计（元）：<span>123.43</span></p>
+                                                                </li>
+                                                                <li>
+                                                                    <h3>[套餐]自定义车贴4</h3>
+                                                                    <div class="odg_bold">左边尺寸：175*25cm ，右边尺寸：175*25cm
+                                                                        ，材质：黑胶车贴120g高密底纸12s厚，工艺：覆亮膜,异性雕刻，物料编码：客户自定义</div>
+                                                                    <p>平米单价（元）：<span>3948*324</span></p>
+                                                                    <p>原料单价：<span>123.43</span></p>
+                                                                    <p>小计（元）：<span>123.43</span></p>
+                                                                </li>
+                                                                <li>
+                                                                    <h3>[套餐]自定义车贴</h3>
+                                                                    <div class="odg_bold">左边尺寸：175*25cm ，右边尺寸：175*25cm
+                                                                        ，材质：黑胶车贴120g高密底纸12s厚，工艺：覆亮膜,异性雕刻，物料编码：客户自定义</div>
+                                                                    <p>平米单价（元）：<span>3948*324</span></p>
+                                                                    <p>原料单价：<span>123.43</span></p>
+                                                                    <p>小计（元）：<span>123.43</span></p>
+                                                                </li>
+                                                                <li>
+                                                                    <h3>[套餐]自定义车贴</h3>
+                                                                    <div class="odg_bold">左边尺寸：175*25cm ，右边尺寸：175*25cm
+                                                                        ，材质：黑胶车贴120g高密底纸12s厚，工艺：覆亮膜,异性雕刻，物料编码：客户自定义</div>
+                                                                    <p>平米单价（元）：<span>3948*324</span></p>
+                                                                    <p>原料单价：<span>123.43</span></p>
+                                                                    <p>小计（元）：<span>123.43</span></p>
+                                                                </li>
+                                                                <li>
+                                                                    <h3>[套餐]自定义车贴</h3>
+                                                                    <div class="odg_bold">左边尺寸：175*25cm ，右边尺寸：175*25cm
+                                                                        ，材质：黑胶车贴120g高密底纸12s厚，工艺：覆亮膜,异性雕刻，物料编码：客户自定义</div>
+                                                                    <p>平米单价（元）：<span>3948*324</span></p>
+                                                                    <p>原料单价：<span>123.43</span></p>
+                                                                    <p>小计（元）：<span>123.43</span></p>
+                                                                </li>
+                                                                <li>
+                                                                    <h3>[套餐]自定义车贴</h3>
+                                                                    <div class="odg_bold">左边尺寸：175*25cm ，右边尺寸：175*25cm
+                                                                        ，材质：黑胶车贴120g高密底纸12s厚，工艺：覆亮膜,异性雕刻，物料编码：客户自定义</div>
+                                                                    <p>平米单价（元）：<span>3948*324</span></p>
+                                                                    <p>原料单价：<span>123.43</span></p>
+                                                                    <p>小计（元）：<span>123.43</span></p>
+                                                                </li>
+
+                                                            </ul>
+                                                        </div>
+                                                        <a href="javascript:;" class="odg_pre "></a>
+                                                        <a href="javascript:;" data_count="0" class="odg_next"></a>
+                                                        <span class="odg_close"></span>
+                                                    </div>
+                                                    <div class="odg_list odg_list_b">
+                                                        <table class="odg_b_tab" cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                                <th>收货人</th>
+                                                                <th>联系电话</th>
+                                                                <th>固定电话</th>
+                                                                <th>地区</th>
+                                                                <th>详细地址</th>
+                                                                <th>数量</th>
+                                                                <th>单价（元）</th>
+                                                                <th>小计（元）</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>飞鸟</td>
+                                                                <td>18310392882</td>
+                                                                <td>7438874</td>
+                                                                <td>北京市</td>
+                                                                <td>汉威大厦</td>
+                                                                <td>1</td>
+                                                                <td>14.00</td>
+                                                                <td>15.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>飞鸟</td>
+                                                                <td>18310392882</td>
+                                                                <td>7438874</td>
+                                                                <td>北京市</td>
+                                                                <td>汉威大厦</td>
+                                                                <td>1</td>
+                                                                <td>14.00</td>
+                                                                <td>15.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>飞鸟</td>
+                                                                <td>18310392882</td>
+                                                                <td>7438874</td>
+                                                                <td>北京市</td>
+                                                                <td>汉威大厦</td>
+                                                                <td>1</td>
+                                                                <td>14.00</td>
+                                                                <td>15.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>飞鸟</td>
+                                                                <td>18310392882</td>
+                                                                <td>7438874</td>
+                                                                <td>北京市</td>
+                                                                <td>汉威大厦</td>
+                                                                <td>1</td>
+                                                                <td>14.00</td>
+                                                                <td>15.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>飞鸟</td>
+                                                                <td>18310392882</td>
+                                                                <td>7438874</td>
+                                                                <td>北京市</td>
+                                                                <td>汉威大厦</td>
+                                                                <td>1</td>
+                                                                <td>14.00</td>
+                                                                <td>15.00</td>
+                                                            </tr>
+                                                        </table>
+                                                        <span class="odg_close"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="p_pos">500(套)
+                                </td>
+                                <td>￥10295.00</td>
+                                <td>生产单</td>
+                                <td>
+                                    <p class="mar_bottom10">已审核</p><a class="order-details" href="https://my.yangguangqicai.com/Order/Detail?orderCode=1190612320164">订单详情</a>
+                                </td>
+                                <td>
+                                    <div class="goods-operate" ordercode="1190612320164"></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="orderTab m_b15 odgTab">
+                        <tbody>
+                            <tr class="titColor">
+                                <td style="width:auto;"><span class="boldStyle detailType">交易单：Q190612111829521</span><span
+                                        class="detailType">商品总金额 ￥30885</span></td>
+                                <td style="width: 12%;"><span class="detailType">运费 ￥0</span></td>
+                                <td style="width: 12%;"></td>
+                                <td style="width: 12%;"></td>
+                                <td style="width: 12%;"></td>
+                                <td style="width: 12%;"></td>
+                            </tr>
+
+                            <tr class="hover" style="background-color: rgb(255, 255, 255); display: table-row;">
+                                <td>
+                                    <div class="odg_box clearfix">
+                                        <div class="odg_img fl">
+                                            <img src="./订单管理_files/default.png" onclick="javascript:window.open(&#39;https://item.yangguangqicai.com/product_big/17626/19615?relId=9040&amp;extattrid=58992&#39;)"></<img>
+                                            <p>1190612320164</p>
+                                        </div>
+                                        <div class="odg_msg fl">
+                                            <h3>新品车贴 平板</h3>
+                                            <div class="odg_btn">
+                                                <button class="odg_btn_detail">查看详情</button>
+                                                <button class="odg_btn_address">地址列表</button>
+                                                <div class="odg_list_box">
+                                                    <div class="odg_list odg_list_a ">
+                                                        <div class="odg_nowarp">
+                                                            <ul class="odg_ul clearfix">
+                                                                <li>
+                                                                    <h3>[套餐]自定义车贴1</h3>
+                                                                    <div class="odg_bold">左边尺寸：175*25cm ，右边尺寸：175*25cm
+                                                                        ，材质：黑胶车贴120g高密底纸12s厚，工艺：覆亮膜,异性雕刻，物料编码：客户自定义</div>
+                                                                    <p>平米单价（元）：<span>3948*324</span></p>
+                                                                    <p>原料单价：<span>123.43</span></p>
+                                                                    <p>小计（元）：<span>123.43</span></p>
+                                                                </li>
+                                                                <li>
+                                                                    <h3>[套餐]自定义车贴</h3>
+                                                                    <div class="odg_bold">左边尺寸：175*25cm ，右边尺寸：175*25cm
+                                                                        ，材质：黑胶车贴120g高密底纸12s厚，工艺：覆亮膜,异性雕刻，物料编码：客户自定义</div>
+                                                                    <p>平米单价（元）：<span>3948*324</span></p>
+                                                                    <p>原料单价：<span>123.43</span></p>
+                                                                    <p>小计（元）：<span>123.43</span></p>
+                                                                </li>
+                                                                <li>
+                                                                    <h3>[套餐]自定义车贴</h3>
+                                                                    <div class="odg_bold">左边尺寸：175*25cm ，右边尺寸：175*25cm
+                                                                        ，材质：黑胶车贴120g高密底纸12s厚，工艺：覆亮膜,异性雕刻，物料编码：客户自定义</div>
+                                                                    <p>平米单价（元）：<span>3948*324</span></p>
+                                                                    <p>原料单价：<span>123.43</span></p>
+                                                                    <p>小计（元）：<span>123.43</span></p>
+                                                                </li>
+                                                                <li>
+                                                                    <h3>[套餐]自定义车贴</h3>
+                                                                    <div class="odg_bold">左边尺寸：175*25cm ，右边尺寸：175*25cm
+                                                                        ，材质：黑胶车贴120g高密底纸12s厚，工艺：覆亮膜,异性雕刻，物料编码：客户自定义</div>
+                                                                    <p>平米单价（元）：<span>3948*324</span></p>
+                                                                    <p>原料单价：<span>123.43</span></p>
+                                                                    <p>小计（元）：<span>123.43</span></p>
+                                                                </li>
+                                                                <li>
+                                                                    <h3>[套餐]自定义车贴2</h3>
+                                                                    <div class="odg_bold">左边尺寸：175*25cm ，右边尺寸：175*25cm
+                                                                        ，材质：黑胶车贴120g高密底纸12s厚，工艺：覆亮膜,异性雕刻，物料编码：客户自定义</div>
+                                                                    <p>平米单价（元）：<span>3948*324</span></p>
+                                                                    <p>原料单价：<span>123.43</span></p>
+                                                                    <p>小计（元）：<span>123.43</span></p>
+                                                                </li>
+                                                                <li>
+                                                                    <h3>[套餐]自定义车贴</h3>
+                                                                    <div class="odg_bold">左边尺寸：175*25cm ，右边尺寸：175*25cm
+                                                                        ，材质：黑胶车贴120g高密底纸12s厚，工艺：覆亮膜,异性雕刻，物料编码：客户自定义</div>
+                                                                    <p>平米单价（元）：<span>3948*324</span></p>
+                                                                    <p>原料单价：<span>123.43</span></p>
+                                                                    <p>小计（元）：<span>123.43</span></p>
+                                                                </li>
+                                                                <li>
+                                                                    <h3>[套餐]自定义车贴</h3>
+                                                                    <div class="odg_bold">左边尺寸：175*25cm ，右边尺寸：175*25cm
+                                                                        ，材质：黑胶车贴120g高密底纸12s厚，工艺：覆亮膜,异性雕刻，物料编码：客户自定义</div>
+                                                                    <p>平米单价（元）：<span>3948*324</span></p>
+                                                                    <p>原料单价：<span>123.43</span></p>
+                                                                    <p>小计（元）：<span>123.43</span></p>
+                                                                </li>
+                                                                <li>
+                                                                    <h3>[套餐]自定义车贴</h3>
+                                                                    <div class="odg_bold">左边尺寸：175*25cm ，右边尺寸：175*25cm
+                                                                        ，材质：黑胶车贴120g高密底纸12s厚，工艺：覆亮膜,异性雕刻，物料编码：客户自定义</div>
+                                                                    <p>平米单价（元）：<span>3948*324</span></p>
+                                                                    <p>原料单价：<span>123.43</span></p>
+                                                                    <p>小计（元）：<span>123.43</span></p>
+                                                                </li>
+                                                                <li>
+                                                                    <h3>[套餐]自定义车贴</h3>
+                                                                    <div class="odg_bold">左边尺寸：175*25cm ，右边尺寸：175*25cm
+                                                                        ，材质：黑胶车贴120g高密底纸12s厚，工艺：覆亮膜,异性雕刻，物料编码：客户自定义</div>
+                                                                    <p>平米单价（元）：<span>3948*324</span></p>
+                                                                    <p>原料单价：<span>123.43</span></p>
+                                                                    <p>小计（元）：<span>123.43</span></p>
+                                                                </li>
+                                                                <li>
+                                                                    <h3>[套餐]自定义车贴</h3>
+                                                                    <div class="odg_bold">左边尺寸：175*25cm ，右边尺寸：175*25cm
+                                                                        ，材质：黑胶车贴120g高密底纸12s厚，工艺：覆亮膜,异性雕刻，物料编码：客户自定义</div>
+                                                                    <p>平米单价（元）：<span>3948*324</span></p>
+                                                                    <p>原料单价：<span>123.43</span></p>
+                                                                    <p>小计（元）：<span>123.43</span></p>
+                                                                </li>
+
+                                                            </ul>
+                                                        </div>
+                                                        <a href="javascript:;" class="odg_pre "></a>
+                                                        <a href="javascript:;" data_count="0" class="odg_next"></a>
+                                                        <span class="odg_close"></span>
+                                                    </div>
+                                                    <div class="odg_list odg_list_b">
+                                                        <table class="odg_b_tab" cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                                <th>收货人</th>
+                                                                <th>联系电话</th>
+                                                                <th>固定电话</th>
+                                                                <th>地区</th>
+                                                                <th>详细地址</th>
+                                                                <th>数量</th>
+                                                                <th>单价（元）</th>
+                                                                <th>小计（元）</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>飞鸟</td>
+                                                                <td>18310392882</td>
+                                                                <td>7438874</td>
+                                                                <td>北京市</td>
+                                                                <td>汉威大厦</td>
+                                                                <td>1</td>
+                                                                <td>14.00</td>
+                                                                <td>15.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>飞鸟</td>
+                                                                <td>18310392882</td>
+                                                                <td>7438874</td>
+                                                                <td>北京市</td>
+                                                                <td>汉威大厦</td>
+                                                                <td>1</td>
+                                                                <td>14.00</td>
+                                                                <td>15.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>飞鸟</td>
+                                                                <td>18310392882</td>
+                                                                <td>7438874</td>
+                                                                <td>北京市</td>
+                                                                <td>汉威大厦</td>
+                                                                <td>1</td>
+                                                                <td>14.00</td>
+                                                                <td>15.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>飞鸟</td>
+                                                                <td>18310392882</td>
+                                                                <td>7438874</td>
+                                                                <td>北京市</td>
+                                                                <td>汉威大厦</td>
+                                                                <td>1</td>
+                                                                <td>14.00</td>
+                                                                <td>15.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>飞鸟</td>
+                                                                <td>18310392882</td>
+                                                                <td>7438874</td>
+                                                                <td>北京市</td>
+                                                                <td>汉威大厦</td>
+                                                                <td>1</td>
+                                                                <td>14.00</td>
+                                                                <td>15.00</td>
+                                                            </tr>
+                                                        </table>
+                                                        <span class="odg_close"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="p_pos">500(套)
+                                </td>
+                                <td>￥10295.00</td>
+                                <td>生产单</td>
+                                <td>
+                                    <p class="mar_bottom10">已审核</p><a class="order-details" href="https://my.yangguangqicai.com/Order/Detail?orderCode=1190612320164">订单详情</a>
+                                </td>
+                                <td>
+                                    <div class="goods-operate" ordercode="1190612320164"></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <script>
+                        $(function () {
+
+                            $(".odg_btn_detail").click(function () {
+                                $(this).parents(".odgTab").siblings(".odgTab").find(".odg_list").removeClass("odg_open");
+                                if ($(this).siblings(".odg_list_box").find(".odg_list_a").hasClass("odg_open")) {
+                                    $(this).siblings(".odg_list_box").find(".odg_list_a").removeClass("odg_open");
+                                } else {
+                                    $(this).siblings(".odg_list_box").children().removeClass("odg_open");
+                                    $(this).siblings(".odg_list_box").find(".odg_list_a").addClass("odg_open");
+                                }
+                            });
+                            $(".odg_btn_address").click(function () {
+                                $(this).parents(".odgTab").siblings(".odgTab").find(".odg_list").removeClass("odg_open");
+                                if ($(this).siblings(".odg_list_box").find(".odg_list_b").hasClass("odg_open")) {
+                                    $(this).siblings(".odg_list_box").find(".odg_list_b").removeClass("odg_open");
+                                } else {
+                                    $(this).siblings(".odg_list_box").children().removeClass("odg_open");
+                                    $(this).siblings(".odg_list_box").find(".odg_list_b").addClass("odg_open");
+                                }
+                            });
+                            $(".odg_close").click(function () {
+                                $(this).parents(".odg_list").removeClass("odg_open");
+                            });
+                            // var count = 0, max_count = Math.floor(len / 4);
+                            $(".odg_ul").each(function (index, row) {
+                                $(this).width($(".odg_ul>li").outerWidth(true) * $(this).children().length + 40);
+                            });
+                            // 
+                            $(".odg_pre").click(function () {
+                                var count = Number($(this).siblings(".odg_next").attr("data_count"));
+                                var max_count = Math.floor($(this).siblings(".odg_nowarp").children().children().length / 4);
+                                count--;
+                                if (count < 0) {
+                                    count++;
+                                    return;
+                                }
+                                $(this).siblings(".odg_next").attr("data_count", count)
+
+                                if (count == 0) {
+                                    $(this).removeClass("odg_pre_no");
+                                } else {
+                                    $(this).addClass("odg_pre_no");
+                                }
+                                $(this).siblings(".odg_next").addClass("odg_next_no");
+
+                                var width =$(this).siblings(".odg_nowarp").width();
+                                $(this).siblings(".odg_nowarp").children().animate({ left: -width * count + "px" });
+                                // $("")
+                            });
+                            $(".odg_next").click(function () {
+                                var count = Number($(this).attr("data_count"));
+                                var max_count = Math.floor($(this).siblings(".odg_nowarp").children().children().length / 4);
+                                count++;
+
+                                if (count > max_count) {
+                                    count--;
+                                    return;
+                                }
+                                $(this).attr("data_count", count)
+                                if (count == max_count) {
+                                    $(this).removeClass("odg_next_no");
+
+                                } else {
+                                    $(this).addClass("odg_next_no");
+                                }
+                                $(this).siblings(".odg_pre").addClass("odg_pre_no");
+                                var width = $(this).siblings(".odg_nowarp").width();
+                                $(this).siblings(".odg_nowarp").children().animate({ left: -width * count + "px" });
+                            });
+                        });
+                    </script>
+                    <div id="divpage" class="pageNub">
+                        <div id="biuuu_address" pagesize="5" pageindex="1"></div>
+                        <p class="Frightn nubMsg">
+                            每页 <span name="pagesize">5</span> 条，共 <span name="pagecount">1</span> 页，总共 <span name="totalcount">3</span>
+                            条数据</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- 购物车导入代码 -->
+    <div class="J-global-toolbar" id="DivCartRight">
+        <div class="jdm-toolbar-wrap" id="icons" style="width: 0px;">
+            <div class="jdm-toolbar" style="">
+                <div class="jdm-toolbar-panels J-panel" style="background: rgb(255, 255, 255);">
+                    <div class="J-panel-poisiton" id="jisuan">
+                        <div id="div1" style="display:none;">
+                            <div id="div2"></div>
+                        </div>
+                        <div id="cartContent">
+                            <div class="LabClickCont LabBuyCar" id="appendCart" style="height: 800px; overflow-y: auto;">
+                                <p class="LabAllCheck">最新加入的商品</p>
+                                <table class="LabBuyCont" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                        <tr>
+                                            <td width="15%"><a href="javascript:void(0);" onclick="dianji(&quot;https://item.yangguangqicai.com/product_big/17626/19615?relId=9040&amp;extattrid=58992&quot;);"><img
+                                                        src="./订单管理_files/default.png" alt="" width="50"></a></td>
+                                            <td width="60%">
+                                                <div style="padding: 5px;"><a href="javascript:void(0);" onclick="dianji(&quot;https://item.yangguangqicai.com/product_big/17626/19615?relId=9040&amp;extattrid=58992&quot;);"
+                                                        title="新品车贴 平板左边尺寸：175*25cm，右边尺寸：175*25cm，材质：黑胶车贴120g高密底纸12s厚，工艺：覆亮膜,异性雕刻，物料编码：客户自定义">新品车贴
+                                                        平板</a></div>
+                                                <p class="wusuowei"><span style="width:129.60000000000002px;color:#7f7f7f;float:left;overflow:hidden;display:inline-block;white-space:nowrap;text-overflow:ellipsis;">左边尺寸：175*25cm，右边尺寸：175*25cm，材质：黑胶车贴120g高密底纸12s厚，工艺：覆亮膜,异性雕刻，物料编码：客户自定义</span><span
+                                                        style="color:#49a8c8;float:right;display:inline-block;">
+                                                        <strong style="color:red">￥20.59</strong>x1 </span><br> </p>
+                                            </td>
+                                            <td width="10%">
+                                                <p class="LabProDelete"><a href="javascript:void(0);" price="20.59"
+                                                        onclick="deleteProduct(&#39;19615_585841_0_58992&#39;,&#39;1&#39;,&#39;20.59&#39;,this,&#39;58sqr1&#39;,&#39;https://cart.yangguangqicai.com&#39;)">删除</a></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="15%"><a href="javascript:void(0);" onclick="dianji(&quot;https://item.yangguangqicai.com/product_big/17626/19453?relId=8959&amp;coordinatesid=15&amp;extattrid=59092&quot;);"><img
+                                                        src="./订单管理_files/default.png" alt="" width="50"></a></td>
+                                            <td width="60%">
+                                                <div style="padding: 5px;"><a href="javascript:void(0);" onclick="dianji(&quot;https://item.yangguangqicai.com/product_big/17626/19453?relId=8959&amp;coordinatesid=15&amp;extattrid=59092&quot;);"
+                                                        title="自定义车贴">自定义车贴</a></div>
+                                                <p class="wusuowei"><span style="width:115.20000000000002px;color:#7f7f7f;float:left;overflow:hidden;display:inline-block;white-space:nowrap;text-overflow:ellipsis;">位置：左边，尺寸：13.0m*1.0m，材质：120g迪斯飞丝黑色可移除车贴，印刷：单面喷绘，工艺：直角裁切，物料编码：20190611</span><span
+                                                        style="color:#49a8c8;float:right;display:inline-block;">
+                                                        <strong style="color:red">￥3098.08</strong>x1 </span><br> </p>
+                                            </td>
+                                            <td width="10%">
+                                                <p class="LabProDelete"><a href="javascript:void(0);" price="3098.0800"
+                                                        onclick="deleteProduct(&#39;19453_585723_0_59092&#39;,&#39;1&#39;,&#39;3098.0800&#39;,this,&#39;58sqr1&#39;,&#39;https://cart.yangguangqicai.com&#39;)">删除</a></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="15%"><a href="javascript:void(0);" onclick="dianji(&quot;https://item.yangguangqicai.com/product_big/17626/19453?relId=8959&amp;extattrid=59089&quot;);"><img
+                                                        src="./订单管理_files/default.png" alt="" width="50"></a></td>
+                                            <td width="60%">
+                                                <div style="padding: 5px;"><a href="javascript:void(0);" onclick="dianji(&quot;https://item.yangguangqicai.com/product_big/17626/19453?relId=8959&amp;extattrid=59089&quot;);"
+                                                        title="自定义车贴">自定义车贴</a></div>
+                                                <p class="wusuowei"><span style="width:122.4px;color:#7f7f7f;float:left;overflow:hidden;display:inline-block;white-space:nowrap;text-overflow:ellipsis;">位置：后边，尺寸：1.0m*1.0m，材质：纳尔单孔透，印刷：单面喷绘，工艺：直角裁切，物料编码：20190611</span><span
+                                                        style="color:#49a8c8;float:right;display:inline-block;">
+                                                        <strong style="color:red">￥294.36</strong>x1 </span><br> </p>
+                                            </td>
+                                            <td width="10%">
+                                                <p class="LabProDelete"><a href="javascript:void(0);" price="294.3600"
+                                                        onclick="deleteProduct(&#39;19453_585719_0_59089&#39;,&#39;1&#39;,&#39;294.3600&#39;,this,&#39;58sqr1&#39;,&#39;https://cart.yangguangqicai.com&#39;)">删除</a></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="15%"><a href="javascript:void(0);" onclick="dianji(&quot;https://item.yangguangqicai.com/product_big/17626/19453?relId=8959&amp;extattrid=59086&quot;);"><img
+                                                        src="./订单管理_files/default.png" alt="" width="50"></a></td>
+                                            <td width="60%">
+                                                <div style="padding: 5px;"><a href="javascript:void(0);" onclick="dianji(&quot;https://item.yangguangqicai.com/product_big/17626/19453?relId=8959&amp;extattrid=59086&quot;);"
+                                                        title="自定义车贴">自定义车贴</a></div>
+                                                <p class="wusuowei"><span style="width:122.4px;color:#7f7f7f;float:left;overflow:hidden;display:inline-block;white-space:nowrap;text-overflow:ellipsis;">位置：左边，尺寸：21.0m*2.0m，材质：120g迪斯飞丝黑色可移除车贴，印刷：单面喷绘，工艺：直角裁切，物料编码：未指定</span><span
+                                                        style="color:#49a8c8;float:right;display:inline-block;">
+                                                        <strong style="color:red">￥956.76</strong>x1 </span><br> </p>
+                                            </td>
+                                            <td width="10%">
+                                                <p class="LabProDelete"><a href="javascript:void(0);" price="956.7600"
+                                                        onclick="deleteProduct(&#39;19453_585723_0_59086&#39;,&#39;1&#39;,&#39;956.7600&#39;,this,&#39;58sqr1&#39;,&#39;https://cart.yangguangqicai.com&#39;)">删除</a></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="15%"><a href="javascript:void(0);" onclick="dianji(&quot;https://item.yangguangqicai.com/product_big/17626/19453?relId=8959&amp;coordinatesid=15&amp;extattrid=59081&quot;);"><img
+                                                        src="./订单管理_files/default.png" alt="" width="50"></a></td>
+                                            <td width="60%">
+                                                <div style="padding: 5px;"><a href="javascript:void(0);" onclick="dianji(&quot;https://item.yangguangqicai.com/product_big/17626/19453?relId=8959&amp;coordinatesid=15&amp;extattrid=59081&quot;);"
+                                                        title="自定义车贴">自定义车贴</a></div>
+                                                <p class="wusuowei"><span style="width:72.00000000000001px;color:#7f7f7f;float:left;overflow:hidden;display:inline-block;white-space:nowrap;text-overflow:ellipsis;">位置：左边，尺寸：1.8911m*0.981m，材质：120g迪斯飞丝黑色可移除车贴，印刷：单面喷绘，工艺：直角裁切，物料编码：未指定</span><span
+                                                        style="color:#49a8c8;float:right;display:inline-block;">
+                                                        <strong style="color:red">￥196.821298038</strong>x1 </span><br>
+                                                </p>
+                                            </td>
+                                            <td width="10%">
+                                                <p class="LabProDelete"><a href="javascript:void(0);" price="196.821298038"
+                                                        onclick="deleteProduct(&#39;19453_585723_0_59081&#39;,&#39;1&#39;,&#39;196.821298038&#39;,this,&#39;58sqr1&#39;,&#39;https://cart.yangguangqicai.com&#39;)">删除</a></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="15%"><a href="javascript:void(0);" onclick="dianji(&quot;https://item.yangguangqicai.com/product_big/17626/19453?relId=8959&amp;extattrid=59078&quot;);"><img
+                                                        src="./订单管理_files/default.png" alt="" width="50"></a></td>
+                                            <td width="60%">
+                                                <div style="padding: 5px;"><a href="javascript:void(0);" onclick="dianji(&quot;https://item.yangguangqicai.com/product_big/17626/19453?relId=8959&amp;extattrid=59078&quot;);"
+                                                        title="自定义车贴">自定义车贴</a></div>
+                                                <p class="wusuowei"><span style="width:129.60000000000002px;color:#7f7f7f;float:left;overflow:hidden;display:inline-block;white-space:nowrap;text-overflow:ellipsis;">位置：后边，尺寸：1.0m*1.0m，材质：纳尔单孔透，印刷：单面喷绘，工艺：直角裁切，物料编码：20190611</span><span
+                                                        style="color:#49a8c8;float:right;display:inline-block;">
+                                                        <strong style="color:red">￥43.78</strong>x1 </span><br> </p>
+                                            </td>
+                                            <td width="10%">
+                                                <p class="LabProDelete"><a href="javascript:void(0);" price="43.7800"
+                                                        onclick="deleteProduct(&#39;19453_585719_0_59078&#39;,&#39;1&#39;,&#39;43.7800&#39;,this,&#39;58sqr1&#39;,&#39;https://cart.yangguangqicai.com&#39;)">删除</a></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="15%"><a href="javascript:void(0);" onclick="dianji(&quot;https://item.yangguangqicai.com/product_big/17626/19453?relId=8959&amp;extattrid=59076&quot;);"><img
+                                                        src="./订单管理_files/default.png" alt="" width="50"></a></td>
+                                            <td width="60%">
+                                                <div style="padding: 5px;"><a href="javascript:void(0);" onclick="dianji(&quot;https://item.yangguangqicai.com/product_big/17626/19453?relId=8959&amp;extattrid=59076&quot;);"
+                                                        title="自定义车贴">自定义车贴</a></div>
+                                                <p class="wusuowei"><span style="width:129.60000000000002px;color:#7f7f7f;float:left;overflow:hidden;display:inline-block;white-space:nowrap;text-overflow:ellipsis;">位置：后边，尺寸：1.0m*1.0m，材质：纳尔单孔透，印刷：单面喷绘，工艺：直角裁切，物料编码：20190611</span><span
+                                                        style="color:#49a8c8;float:right;display:inline-block;">
+                                                        <strong style="color:red">￥43.78</strong>x1 </span><br> </p>
+                                            </td>
+                                            <td width="10%">
+                                                <p class="LabProDelete"><a href="javascript:void(0);" price="43.7800"
+                                                        onclick="deleteProduct(&#39;19453_585719_0_59076&#39;,&#39;1&#39;,&#39;43.7800&#39;,this,&#39;58sqr1&#39;,&#39;https://cart.yangguangqicai.com&#39;)">删除</a></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="15%"><a href="javascript:void(0);" onclick="dianji(&quot;https://item.yangguangqicai.com/product_big/17626/19453?relId=8959&amp;extattrid=59074&quot;);"><img
+                                                        src="./订单管理_files/default.png" alt="" width="50"></a></td>
+                                            <td width="60%">
+                                                <div style="padding: 5px;"><a href="javascript:void(0);" onclick="dianji(&quot;https://item.yangguangqicai.com/product_big/17626/19453?relId=8959&amp;extattrid=59074&quot;);"
+                                                        title="自定义车贴">自定义车贴</a></div>
+                                                <p class="wusuowei"><span style="width:129.60000000000002px;color:#7f7f7f;float:left;overflow:hidden;display:inline-block;white-space:nowrap;text-overflow:ellipsis;">位置：后边，尺寸：1.0m*1.0m，材质：纳尔单孔透，印刷：单面喷绘，工艺：直角裁切，物料编码：20190611</span><span
+                                                        style="color:#49a8c8;float:right;display:inline-block;">
+                                                        <strong style="color:red">￥66.56</strong>x1 </span><br> </p>
+                                            </td>
+                                            <td width="10%">
+                                                <p class="LabProDelete"><a href="javascript:void(0);" price="66.5600"
+                                                        onclick="deleteProduct(&#39;19453_585719_0_59074&#39;,&#39;1&#39;,&#39;66.5600&#39;,this,&#39;58sqr1&#39;,&#39;https://cart.yangguangqicai.com&#39;)">删除</a></p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="LabBtnbox" id="priceTotal">
+                            <p class="clearfix"><span class="Fleft">共<span class="color29" id="span_count">8</span>种商品</span>
+                                <span class="Fright">共计:<span class="color29" id="span_totalprice">￥4720.73</span></span></p>
+                            <a class="LabBtn" onclick="jiesuan()" rehref="https://cart.yangguangqicai.com/BigCustomer/Cart"><span
+                                    class="ii"></span>结算</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jdm-toolbar-tabs J-tab" style="right: 6px;">
+            <div class="ShoppingCart"><i class="tab_icon"></i> <span class="tab-sub J-count hide" style="display: inline;"
+                    id="cartProductCount">8</span><em class="tab-txt lin40">购物车</em></div>
+            <div class="WorkTime"><i class="tab_icon"></i><em class="tab-txt"><span style="display:block;margin-top:5px;">客服工作时间</span>09:00-18:00</em></div>
+            <div class="WorkPhone"><i class="tab_icon"></i><em class="tab-txt"><span style="display:block;margin-top:5px;">客服热线</span><a
+                        href="tel:4006-086-011">4006-086-011</a></em></div>
+            <div class="Mydingding" id="KGdingding"><i class="tab_icon"></i><em class="tab-txt"><span style="display:block;margin-top:10px;">在线物料咨询</span><a
+                        href="tel:18610710504"></a></em></div>
+            <div class="Progress" id="Progress" type="0" load="0"><i class="tab_icon"></i><em class="tab-txt lin40">我的足迹</em></div>
+            <div class="MyQuestion" id="MyQuestion"><i class="tab_icon"></i><em class="tab-txt lin40">常见问题</em></div>
+        </div>
+    </div>
+
+    <input id="hidd_deptId" type="hidden" value="1338" ondrop="return false;">
+
+
+    <div class="footerBox">
+        <p class="copyRight">Copyright2010-2019 EasyPNP, All Rights Reserved 阳光印网 版权所有 <span><a href="http://www.miitbeian.gov.cn/"
+                    target="_blank">京ICP备14011154号</a></span></p>
+    </div>
+</body>
+
+</html>

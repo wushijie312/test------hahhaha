@@ -1,0 +1,160 @@
+﻿body .yourclass .layui-layer-btn {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 10px 12px;   
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+/*.layui-layer-btn .layui-layer-btn0{
+    border-color:#349291;
+    background-color:#2396cb;
+    color:#fff;
+}*/
+
+#box{
+    display: none;
+}
+#Edit_box{
+     display: none;
+}   
+
+.piclog{
+    width:55px; height: 67px; margin: 10px auto;
+}
+.Add_Adr{ 
+    height: 40px;
+    line-height: 40px;
+}
+.Add_Adr p{
+    color: #fff;
+    width: 200px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+}
+.BigBg{
+    background: #f5f5f5;
+    height: 45px;
+}
+.BigPicInfor{
+
+}
+.BigPicInfor h4,.BigPicInfor p{
+    line-height: 24px; margin-bottom: 4px;
+}
+.AddpicTitle{
+    padding-left: 36px;
+    height: 34px;
+    line-height: 34px;
+    background: url("https://static.98ep.com/Img/BCustomer/subfileImg/ad.png") left center no-repeat;
+    margin: 10px 0 10px 20px;
+}
+.Addpic_name{
+    line-height: 24px;
+    margin-bottom: 4px;
+}
+.Addpic_del{
+    width: 60px;
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #f2f2f2;
+    text-align: center;
+    font-size: 12px;
+    display: inline-block;
+}
+.Txtarea_default{
+    width: 420px;
+    height: 55px;
+    resize: none;
+}
+.Delete_title{
+    padding-left: 34px;
+    height: 28px;
+    line-height: 28px;
+    margin-left: 30px;
+    background: url("https://static.98ep.com/Img/BCustomer/subfileImg/worning.png") left center no-repeat;
+    color: #666;
+    font-size: 24px;
+}
+.Qus_title{
+    padding-left: 30px;
+    height: 27px;
+    line-height: 27px;
+    margin-left: 30px;
+    background: url("https://static.98ep.com/Img/BCustomer/subfileImg/qus.png") left center no-repeat;
+    color: #666;
+    font-size: 24px;
+}
+.HistoryTitle{
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    background: #349291;
+}
+.HList{
+    height: 200px;
+    overflow-y: auto;
+}
+.hide{display:none;}
+
+
+
+/*信息提示框*/
+.pop-upBox{display:none; box-sizing:border-box; background-color:#fff;}
+.pop-upBox .title{height:34px;line-height:34px;margin-bottom:10px; font-size:18px; font-weight:700;}
+.ad_icons{ display:inline-block; width:34px; height:34px; background:url(https://static.98ep.com/Img/BCustomer/subfileImg/ad.png) no-repeat;};
+.search_p{position:relative; }
+.searchVal{width:240px; padding:4px 12px; box-sizing:border-box; }
+.search_p em{display:inline-block; width:20px; height:20px; background:url(https://static.98ep.com/Img/BCustomer/subfileImg/searchbtn.png) no-repeat; position:absolute; right:5px; top:2px;}
+.btn_footer{margin-top:20px; text-align:center;}
+/*修改密码弹框*/
+/*.iPas_chgBox{width:400px;height:258px; overflow:hidden; }*/
+.PsChange{display:inline-block; width:22px; height:26px; background:url(https://static.98ep.com/Img/BCustomer/subfileImg/PsChange.png) no-repeat;}
+.chgBox_row{height:34px; line-height:34px;}
+.chgBox_row dt{width:65px; text-align:right;}
+.chgBox_row input{padding:5px 10px;}
+.iSwicth{display:inline-block; width:25px; height:24px; position:absolute; top:12px; right:5px;}
+.iHide-icons{background:url(https://static.98ep.com/Img/BCustomer/subfileImg/hide-icons.png) no-repeat;}
+.iShow-icons{background:url(https://static.98ep.com/Img/BCustomer/subfileImg/show-icons.png) no-repeat;}
+
+/*发布消息-弹框
+/*.iSendInf_Box{width:400px;}*/
+.iSendInf_Box dl dt{height:40px;line-height:40px; font-size:20px; font-weight:700;}
+.iSendInf_Box dl input{width:360px; padding:5px 10px; box-sizing:border-box;}
+.iSendInf_Box dl textarea{width:360px; padding:5px; text-align:left; box-sizing:border-box;}
+/*复制当前地址到其他组-弹框*/
+.iCopy_addGroup .header{height:30px;padding:5px; background-color:#2396cb;}
+.iCopy_addGroup .header select{width:100px; height:30px; line-height:30px;}
+.address_List li{height:40px; line-height:40px; border-bottom:1px solid #ccc; padding:0px 20px;}
+.Txt_center{text-align:center; }
+
+/*物料详情-弹框*/
+.material_Box .Tab_Box{width:100%; border-collapse:collapse; }
+.material_Box .Tab_Box thead{background-color:#2396cb;}
+.material_Box .Tab_Box thead td{ color:#fff;}
+.material_Box .Tab_Box tr{height:40px;line-height:40px; padding:5px; text-align:center;}
+/*重命名-弹框*/
+.iResetName_box .resetName_icons{ display:inline-block; width:34px; height:34px; background:url(https://static.98ep.com/Img/BCustomer/subfileImg/iResetName.png) no-repeat;}
+.iReset_p p{height:28px; line-height:28px; margin-left:12px;}
+/*删除地址组-弹框*/
+.iDis_icons{display:inline-block; width:34px; height:34px; background:url(https://static.98ep.com/Img/BCustomer/subfileImg/worning.png) no-repeat;}
+.shiftOut_User .shiftout_icons{ display:inline-block; width:34px; height:34px; background:url(https://static.98ep.com/Img/BCustomer/subfileImg/shiftOut.png) no-repeat;}
+.shiftIn_Users .shiftIn_icons{display:inline-block; width:34px; height:34px; background:url(https://static.98ep.com/Img/BCustomer/subfileImg/shiftIn.png) no-repeat;}
+.shiftIn_table{border:1px solid #ccc;}
+.shiftIn_table table td{padding:5px;}
+.userDl_line{ line-height:40px; }
+.userDt_Txt{text-align:right; width:100px; padding:0px 10px; }
+.userDD_Cont input{padding:5px 12px;}
+.iCreateGroup .creatgr_icons{ display:inline-block; width:34px; height:34px; background:url(https://static.98ep.com/Img/BCustomer/subfileImg/iCreatGroup.png) no-repeat;}
+.selectedAdds{width:900px; height:400px; display:none;  background:#fff;}   
+.selectedAdds .selectTab{ width:100%; border-collapse:collapse;}
+.selectedAdds .selectTab tr{height:36px; line-height:36px; text-align:center; border:1px solid #ccc; }
+.selectedAdds .selectTab tr td{border:none;}
+.layui-layer-title{background:#2396cb; color:#fff;}
